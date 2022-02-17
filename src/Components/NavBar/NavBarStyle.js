@@ -36,7 +36,6 @@ export const Navigation = styled.nav`
 
 export const NavBarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
     height: 60px;
     z-index: 1;
     width: 100%;
@@ -90,7 +89,7 @@ export const Logo = styled(LinkR)`
 
 export const BusinessName = styled.div`
     margin-top: 10px;
-    margin-left: 35%;
+    margin-left: 6%;
     color: #4B4B4B;
     font-family: 'Bellota', cursive;
     font-weight: Regular 400;
@@ -185,6 +184,7 @@ export const NavigationLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
     font-size: 1.1rem;
+    margin-top: 3rem;
 
     &.active{
         border-bottom: 4px solid #FF6302;

@@ -44,26 +44,24 @@ const NavBar = ({ toggle }) => {
         <NavigationMap>
         </NavigationMap> */}
         {/* <Logo to='/' onClick={toggleHome}></Logo> */}
-        <BusinessName>azteca bakery
-        
-                    {/* <NavigationMap>
+        <BusinessName>azteca bakery</BusinessName>
+        <NavigationMap>
                 <NavigationItem>
-                    <NavigationLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-40}>About</NavigationLinks>
+                    <NavigationLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavigationLinks>
                 </NavigationItem>
             </NavigationMap>
 
             <NavigationMap>
                 <NavigationItem>
-                    <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-40}>Cakes</NavigationLinks>
+                    <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-140}>Cakes</NavigationLinks>
                 </NavigationItem>
             </NavigationMap>
 
             <NavigationMap>
                 <NavigationItem>
-                    <NavigationLinks to="pastries" smooth={true} duration={500} spy={true} exact='true' offset={-40}>Pastries</NavigationLinks>
+                    <NavigationLinks to="pastries" smooth={true} duration={500} spy={true} exact='true' offset={-100}>Pastries</NavigationLinks>
                 </NavigationItem>
-            </NavigationMap> */}
-        </BusinessName>
+            </NavigationMap>
 
             <MobileIcon onClick={toggle}>
                 <GiTacos />
