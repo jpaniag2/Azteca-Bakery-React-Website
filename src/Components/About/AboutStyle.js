@@ -14,7 +14,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 800px;
+    height: 530px;
     width: 100%;
     max-width: 2000px;
     margin-right: auto;
@@ -58,12 +58,11 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #000;
+    color: #96948F;
     font-family: 'Great Vibes', cursive;
     font-weight: 400;
     font-size: 4rem;
     line-height: 30px;
-    letter-spacing: 1.4px;
     margin-bottom: 16px;
 `
 
@@ -73,7 +72,7 @@ export const Heading = styled.h1`
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
     line-height: 1.1;
-    color: ${({lightText}) => (lightText ? '#111' : '#2D2F2F')};
+    color: ${({lightText}) => (lightText ? '#B8DBD0' : '#B8DBD0')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -98,7 +97,7 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
     max-width: 100%;
-    height: 100%;
+    height: 450px;
 
     @media screen and (max-width: 1024px){
         height: 600px;
@@ -114,6 +113,7 @@ export const Img = styled.img`
     height: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    object-fit: contain;
 
     @media screen and (max-width: 1024px){
         height: 450px;

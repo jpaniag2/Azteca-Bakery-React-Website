@@ -39,16 +39,7 @@ const Footer = () => {
 
         <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo to="/" onClick={toggleHome}>
-                    Azteca
-                    <SocialLogo2 to="/" onClick={toggleHome}>
-                    Bakery
-                </SocialLogo2>
-                </SocialLogo>
-                <WebsiteRights>©Azteca, {new Date().getFullYear()}</WebsiteRights>
-                <WebsiteRights>©Crunchy Visions ✌️</WebsiteRights>
-
-                <SocialIcons>
+            <SocialIcons>
 
 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
     <FaFacebook />
@@ -59,6 +50,10 @@ const Footer = () => {
 </SocialIconLink>
 
 </SocialIcons>
+                <SocialLogo to="/" onClick={toggleHome}>
+                    azteca bakery © {new Date().getFullYear()}
+                </SocialLogo>
+                <WebsiteRights> Imagined by: ©CrunchyVision ✌️</WebsiteRights>
 
             </SocialMediaWrap>
             

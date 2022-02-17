@@ -17,11 +17,21 @@ export const Navigation = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid #4B4B4B;
+    border-bottom: 1px solid #E3E3E1;
+    margin-left: 10%;
+    margin-right: 10%;
 
 @media screen and (max-width: 1024px){
     transition: 0.8s all ease;
+    height: 150px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
+
+@media screen and (max-width: 450px){
+    height: 100px;
+}
+
 `
 
 export const NavBarContainer = styled.div`
@@ -83,12 +93,12 @@ export const BusinessName = styled.div`
     margin-left: 35%;
     color: #4B4B4B;
     font-family: 'Bellota', cursive;
+    font-weight: Regular 400;
     justify-self: flex-start;
     font-size: 3rem;
     display: flex;
     align-items: center;
     align-left: 24px;
-    font-weight: Regular 400;
     text-decoration: none;
 
     @media screen and (max-width: 1024px){
@@ -97,7 +107,7 @@ export const BusinessName = styled.div`
     }
 
     @media screen and (max-width: 450px){
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 `
