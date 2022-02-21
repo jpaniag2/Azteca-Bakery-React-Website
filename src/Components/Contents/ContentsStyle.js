@@ -2,15 +2,18 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     background-color: #fff;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1124px){
+        padding-left: 0;
+        padding-right: 0;
         margin-left: 3%;
         margin-right: 3%;
     }
     @media screen and (max-width: 450px){
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 `

@@ -112,6 +112,8 @@ export const FooterLinkItems = styled.div`
 
     export const WebsiteRights = styled.small`
         color: #4B4B4B;
+        font-family: 'Bellota Text', cursive;
+        font-weight: 500;
         margin-bottom: 16px;
     `
 

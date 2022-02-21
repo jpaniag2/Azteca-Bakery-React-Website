@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { GiTacos } from 'react-icons/gi'
 import { animateScroll as scroll } from 'react-scroll/modules';
+import { useNavigate } from 'react-router-dom';
 // import './index.css';
 
 
 import {
     Navigation,
+    Navigation2,
     NavBarContainer,
     BusinessName,
     BusinessName2,
@@ -23,7 +25,7 @@ const NavBar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if (window.scrollY > 0) {
+        if (window.scrollY > 50) {
             setScrollNav(true)
         } else {
             setScrollNav(false)
@@ -38,37 +40,61 @@ const NavBar = ({ toggle }) => {
         scroll.scrollToTop();
     }
 
-    return (<Navigation scrollNav={scrollNav}>
-        <NavBarContainer>
-{/* 
-        <NavigationMap>
-        </NavigationMap> */}
-        {/* <Logo to='/' onClick={toggleHome}></Logo> */}
-        <BusinessName>azteca bakery</BusinessName>
-        <NavigationMap>
-                <NavigationItem>
-                    <NavigationLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavigationLinks>
-                </NavigationItem>
-            </NavigationMap>
+    const navigate = useNavigate();
 
-            <NavigationMap>
-                <NavigationItem>
-                    <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-140}>Cakes</NavigationLinks>
-                </NavigationItem>
-            </NavigationMap>
+    return (<>
 
+        <Navigation scrollNav={scrollNav}>
+            <NavBarContainer>
+            <BusinessName to='/' onClick={()=> {navigate('/')}}>azteca bakery</BusinessName>
+
+                <NavigationMap>
+                    <NavigationItem>
+                        <NavigationLinks to='/' onClick={toggleHome}  smooth={true} duration={500} spy={true} exact='true' offset={0}>TOP PAGE</NavigationLinks>
+                    </NavigationItem>
+
+                    <NavigationItem>
+                        <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-150}>CAKES</NavigationLinks>
+                    </NavigationItem>
+
+                    <NavigationItem>
+                        <NavigationLinks to="pastries" smooth={true} duration={500} spy={true} exact='true' offset={-150}>FRESH BREAD</NavigationLinks>
+                    </NavigationItem>
+
+
+                    <NavigationItem>
+                        <NavigationLinks to="location" smooth={true} duration={500} spy={true} exact='true' offset={-80}>LOCATIONS</NavigationLinks>
+                    </NavigationItem>
+
+                    <NavigationItem>
+                        <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-140}>SOCIALS</NavigationLinks>
+                    </NavigationItem>
+
+                    <NavigationItem>
+                        <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-100}>GALLERY</NavigationLinks>
+                    </NavigationItem>
+
+
+                </NavigationMap>
+            </NavBarContainer>
+        </Navigation>
+
+
+        {/* <Navigation2>
+            
             <NavigationMap>
-                <NavigationItem>
-                    <NavigationLinks to="pastries" smooth={true} duration={500} spy={true} exact='true' offset={-100}>Pastries</NavigationLinks>
-                </NavigationItem>
             </NavigationMap>
+            <Logo to='/' onClick={toggleHome}></Logo>
+            
+
 
             <MobileIcon onClick={toggle}>
-                <GiTacos />
-            </MobileIcon>
+                    <GiTacos />
+                </MobileIcon>
 
-        </NavBarContainer>
-    </Navigation>
+        </Navigation2> */}
+
+            </>
     )
 
 }

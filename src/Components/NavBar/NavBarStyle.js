@@ -9,7 +9,8 @@ import { Link as LinkScroll } from 'react-scroll'
 export const Navigation = styled.nav`
     ${'' /* background-color: #222021; */}
     background-color: #fff;
-    height: 150px;
+    height: ${({scrollNav}) => (scrollNav ? '60px' : '140px')};
+    transition: ${({scrollNav}) => (scrollNav ? '0.6s all ease' : '0.8s all ease')};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,29 +19,52 @@ export const Navigation = styled.nav`
     top: 0;
     z-index: 10;
     border-bottom: 1px solid #E3E3E1;
-    margin-left: 10%;
-    margin-right: 10%;
 
 @media screen and (max-width: 1024px){
     transition: 0.8s all ease;
-    height: 150px;
-    margin-left: 0%;
-    margin-right: 0%;
+    height: ${({scrollNav}) => (scrollNav ? '60px' : '140px')};
+
 }
 
 @media screen and (max-width: 450px){
-    height: 100px;
+    display: flex;
+}
+
+`
+export const Navigation2 = styled.nav`
+    ${'' /* background-color: #222021; */}
+    background-color: #fff;
+    height: ${({scrollNav}) => (scrollNav ? '80px' : '100px')};
+    width: 100%;
+    transition: ${({scrollNav}) => (scrollNav ? '0.6s all ease' : '0.8s all ease')};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #E3E3E1;
+
+
+@media screen and (max-width: 1024px){
+    transition: 0.8s all ease;
+    height: ${({scrollNav}) => (scrollNav ? '80px' : '140px')};
+
+}
+
+@media screen and (max-width: 450px){
+    height: 60px;
 }
 
 `
 
 export const NavBarContainer = styled.div`
     display: flex;
-    height: 60px;
+    height: 100%;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
-    max-width: 1100px;
+    padding: 0px;
 `
 export const BrandContainer = styled.div`
     display: flex;
@@ -89,20 +113,33 @@ export const Logo = styled(LinkR)`
 
 export const BusinessName = styled.div`
     margin-top: 10px;
-    margin-left: 6%;
-    color: #4B4B4B;
+    margin-left: 3rem;
+    margin-bottom: 22px;
+    padding: 24px;
+    color: #666666;
     font-family: 'Bellota', cursive;
-    font-weight: Regular 400;
+    font-weight: 700;
     justify-self: flex-start;
-    font-size: 3rem;
+    font-size: ${({scrollNav}) => (scrollNav ? '1rem' : '2.5rem')};
     display: flex;
     align-items: center;
     align-left: 24px;
     text-decoration: none;
+    cursor: pointer;
+
+    &: hover{
+    opacity: .8;
+    transition: 0.8s all ease;
+    color: #01bf71; 
+}
 
     @media screen and (max-width: 1024px){
         border: none;
-        font-size: 3rem;
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-left: 2rem;
+        margin-bottom: 22px;
+        padding: 0px;
     }
 
     @media screen and (max-width: 450px){
@@ -160,34 +197,38 @@ export const NavigationMap = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 
-    @media screen and (max-width: 1024px){
-        display: none;
-    }
 `
 
 
 export const NavigationItem = styled.li`
-    height: 60px; 
+    height: 60px;
 
 `
 
 export const NavigationLinks = styled(LinkScroll)`
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: semi-bold 600;
-    color: #232323;
+    font-weight: 300;
+    color: #000;
     display: flex;
     align-items: center;
     text-decorations: none;
-    padding: 0 2rem;
+    padding: 1rem;
     height: 100%;
     cursor: pointer;
-    font-size: 1.1rem;
-    margin-top: 3rem;
+    font-size: 14px;
+    ${'' /* margin-top: ${({scrollNav}) => (scrollNav ? '1rem' : '2.6rem')}; */}
+    ${'' /* margin-top: 3rem; */}
+
+    @media screen and (max-width: 1024px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 450px){
+        display: none;
+    }
 
     &.active{
-        border-bottom: 4px solid #FF6302;
+        border-bottom: 3px solid #666666;
     }
 
     &: hover{
@@ -211,7 +252,7 @@ export const NavigationButton = styled.nav`
 
 export const NavigationButtonLink = styled(LinkR)`
     border-radius: 50px;
-    background: #01bf71;
+    background: #fff;
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;

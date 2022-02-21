@@ -53,7 +53,7 @@ const Footer = () => {
                 <SocialLogo to="/" onClick={toggleHome}>
                     azteca bakery © {new Date().getFullYear()}
                 </SocialLogo>
-                <WebsiteRights> Imagined by: ©CrunchyVision ✌️</WebsiteRights>
+                <WebsiteRights> Made with ❤️ by ©CrunchyVision</WebsiteRights>
 
             </SocialMediaWrap>
             

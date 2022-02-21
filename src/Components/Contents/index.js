@@ -1,17 +1,19 @@
 
 import Footer from '../Footer';
 import About from '../About';
+import Location from '../Location'
 import { homeObjOne, homeObjTwo } from '../About/Data';
 
 import { Container } from './ContentsStyle';
-import Carousel from '../Carousel';
+import Hero from '../Hero';
 
 export const Contents = () => {
   return (
         <Container>
-            <Carousel />
+            <Hero />
             <About  {...homeObjOne}/>
             <About  {...homeObjTwo}/>
+            <Location />
             <Footer />
         
         </Container>

@@ -4,7 +4,8 @@ export const InfoContainer = styled.div`
     color: #fff;
 
     ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#fff')};
+    background: ${({lightBg}) => (lightBg ? '#F4F4F4' : '#F4F4F4')};
+    margin-top: 10px;
 
     @media screen and (max-width: 1024px){
         padding: 100px 0;
@@ -19,7 +20,7 @@ export const InfoWrapper = styled.div`
     max-width: 2000px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 10px;
     justify-content: center;
 
     @media screen and (max-width: 1024px){
@@ -42,6 +43,7 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
+    margin-left: 10%;
     padding: 0 15px;
     grid-area: col1;
 `
@@ -58,21 +60,21 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #96948F;
-    font-family: 'Great Vibes', cursive;
-    font-weight: 400;
-    font-size: 4rem;
+    color: #666666;
+    font-family: 'Bellota Text', cursive;
+    font-weight: 300;
+    font-size: 2rem;
     line-height: 30px;
     margin-bottom: 16px;
 `
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
     line-height: 1.1;
-    color: ${({lightText}) => (lightText ? '#B8DBD0' : '#B8DBD0')};
+    color: ${({lightText}) => (lightText ? '#F5C40C' : '#F5C40C')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -81,29 +83,35 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     font-family: 'Bellota Text', cursive;
-    font-weight: 700;
+    font-weight: 300;
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#111')};
+    color: ${({darkText}) => (darkText ? '#666666' : '#111')};
 
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    margin-left: 50%;
+
+    @media screen and (max-width: 450px){
+        margin-left: 30%;
+    }
 `
 
 export const ImgWrap = styled.div`
     max-width: 100%;
     height: 450px;
+    
 
     @media screen and (max-width: 1024px){
         height: 600px;
     }
     @media screen and (max-width: 450px){
-        height: 400px;;
+        height: 400px;
     }
 
 `
@@ -114,18 +122,17 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     object-fit: contain;
+    
 
     @media screen and (max-width: 1024px){
         height: 450px;
-        padding-top: 40px;
-        border-radius: 150px;
+        padding-top: 40px;  
         object-fit: cover;
     }
     @media screen and (max-width: 450px){
         height: 300px;
         padding-top: 0px;
         object-fit: cover;
-        border-radius: 0;
         padding-top: 2px;
         
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ButtonElements';
+import {useNavigate} from 'react-router-dom'
 
 import { InfoContainer, 
          InfoWrapper, 
@@ -16,7 +17,10 @@ import { InfoContainer,
         } from './AboutStyle';
 
 
-const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, buttonLabel}) => {
+const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, buttonLabel, linkRoute}) => {
+
+  const navigate = useNavigate();
+
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
@@ -28,7 +32,7 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Button to='home' 
+                <Button onClick={()=> {navigate(linkRoute)}} 
                 smooth={true} 
                 duration={500} 
                 spy={true} 
@@ -36,7 +40,8 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
                 offset={-80} 
                 primary={primary ? 1 : 0} 
                 dark={dark ? 1: 0} 
-                dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
+                dark2={dark2 ? 1 : 0}>{buttonLabel}
+                </Button>
               </BtnWrap>
             </TextWrapper>
           </Column1>
