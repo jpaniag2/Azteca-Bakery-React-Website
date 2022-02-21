@@ -4,7 +4,8 @@ export const InfoContainer = styled.div`
     color: #fff;
 
     ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
-    background: ${({lightBg}) => (lightBg ? '#F4F4F4' : '#F4F4F4')};
+    ${'' /* background: ${({lightBg}) => (lightBg ? '#F4F4F4' : '#F4F4F4')}; */}
+    background: ${({lightBg}) => (lightBg ? '#fff' : '#fff')};
     margin-top: 10px;
 
     @media screen and (max-width: 1024px){
@@ -74,7 +75,7 @@ export const Heading = styled.h1`
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
     line-height: 1.1;
-    color: ${({lightText}) => (lightText ? '#F5C40C' : '#F5C40C')};
+    color: ${({lightText}) => (lightText ? '#000' : '#000')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;

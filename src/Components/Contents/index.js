@@ -6,11 +6,13 @@ import { homeObjOne, homeObjTwo } from '../About/Data';
 
 import { Container } from './ContentsStyle';
 import Hero from '../Hero';
+import Services from '../Services';
 
 export const Contents = () => {
   return (
         <Container>
             <Hero />
+            <Services />
             <About  {...homeObjOne}/>
             <About  {...homeObjTwo}/>
             <Location />
