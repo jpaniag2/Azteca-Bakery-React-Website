@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Contents from '../Components/Contents';
 import NavBar from '../Components/NavBar';
 // import Hero from '../Components/Hero';
@@ -9,13 +9,13 @@ import NavBar from '../Components/NavBar';
 
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+    // const toggle = () => {
+    //     setIsOpen(!isOpen)
+    // }
   return <>
-    <NavBar toggle={toggle}/>
+    {/* <NavBar toggle={toggle}/> */}
     <Contents />
     {/* <Hero />
     <About  {...homeObjOne}/>

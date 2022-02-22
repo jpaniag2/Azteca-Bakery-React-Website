@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import NavBar from '../Components/NavBar';
+import CakesPageContents from '../Components/CakesPageContents';
 
 const CakesPage = () => {
 
@@ -12,8 +12,7 @@ const CakesPage = () => {
 
   return (
       <>
-    <NavBar toggle={toggle}/>
-    <h1>This is the cake page.</h1>
+      <CakesPageContents offset="-60" />
       </>
   )
 }

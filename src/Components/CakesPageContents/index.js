@@ -5,12 +5,13 @@ import About from '../About';
 import Location from '../Location'
 import { homeObjOne, homeObjTwo } from '../About/Data';
 
-import { Container } from './ContentsStyle';
+import { Container } from './CakeContentsStyle';
 import Hero from '../Hero';
 import Services from '../Services';
 import NavBar from '../NavBar'
+import CakeMenu from '../CakeMenu';
 
-export const Contents = () => {
+export const CakesPageContents = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,12 +22,9 @@ export const Contents = () => {
 
   return (
         <Container>
-            <Hero />
             <NavBar toggle={toggle} />
-            <Services />
-            <About  {...homeObjOne}/>
-            <About  {...homeObjTwo}/>
-            <Location />
+            {/* <Services /> */}
+            <CakeMenu />
             <Footer />
         
         </Container>
@@ -34,4 +32,4 @@ export const Contents = () => {
   )
 }
 
-export default Contents
+export default CakesPageContents

@@ -25,7 +25,7 @@ const NavBar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY >= 50) {
             setScrollNav(true)
         } else {
             setScrollNav(false)
@@ -45,26 +45,26 @@ const NavBar = ({ toggle }) => {
     return (<>
 
         <Navigation scrollNav={scrollNav}>
+        <BusinessName to='/' onClick={toggleHome}>AZTECA BAKERY</BusinessName>
             <NavBarContainer>
-            <BusinessName to='/' onClick={()=> {navigate('/')}}>azteca bakery</BusinessName>
-
                 <NavigationMap>
+                
+                    {/* <NavigationItem>
+                        <NavigationLinks to='/' onClick={toggleHome}  smooth={true} duration={500} spy={true} exact='true' offset={-60}>TOP PAGE</NavigationLinks>
+                    </NavigationItem> */}
+{/* 
                     <NavigationItem>
-                        <NavigationLinks to='/' onClick={toggleHome}  smooth={true} duration={500} spy={true} exact='true' offset={0}>TOP PAGE</NavigationLinks>
+                        <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-60}>ABOUT</NavigationLinks>
+                    </NavigationItem> */}
+
+                    <NavigationItem>
+                        <NavigationLinks to="location" smooth={true} duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
                     </NavigationItem>
 
                     <NavigationItem>
-                        <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-150}>CAKES</NavigationLinks>
+                        <NavigationLinks to="/" onClick={()=> {navigate('/cakespage')}} smooth={true} duration={500} spy={true} exact='true' offset={-60}>CAKES</NavigationLinks>
                     </NavigationItem>
 
-                    <NavigationItem>
-                        <NavigationLinks to="pastries" smooth={true} duration={500} spy={true} exact='true' offset={-150}>FRESH BREAD</NavigationLinks>
-                    </NavigationItem>
-
-
-                    <NavigationItem>
-                        <NavigationLinks to="location" smooth={true} duration={500} spy={true} exact='true' offset={-80}>LOCATIONS</NavigationLinks>
-                    </NavigationItem>
 
                     <NavigationItem>
                         <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-140}>SOCIALS</NavigationLinks>

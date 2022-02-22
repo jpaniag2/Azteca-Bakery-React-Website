@@ -3,14 +3,16 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 //import logo from '../../images/HappyTaco.png'
 // import logo from '../../images/LogoDemo.png'
-// import logo from '../../images/AztecaLogo14.png'
+import logo from '../../images/AztecaLogo14.png'
 
 
 export const Navigation = styled.nav`
     ${'' /* background-color: #222021; */}
     background-color: #fff;
-    height: ${({scrollNav}) => (scrollNav ? '60px' : '140px')};
+    height: ${({scrollNav}) => (scrollNav ? '60px' : '160px')};
+    ${'' /* height: 60px; */}
     transition: ${({scrollNav}) => (scrollNav ? '0.6s all ease' : '0.8s all ease')};
+    ${'' /* transition: 0.8s all ease; */}
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +80,13 @@ export const BrandContainer = styled.div`
 `
 
 export const Logo = styled(LinkR)`
-    ${'' /* background-image: ${`url(${logo})`}; */}
+    background-image: ${`url(${logo})`};
     background-size: contain;
-    margin-top: 60px;
+    margin-top: 0px;
     background-repeat: no-repeat;
     background-color: transparent;
-    height: 120px;
-    width: 80px;
+    height: 100%;
+    width: 10rem;
     transition: 0.8s all ease;
 
 &: hover{
@@ -111,21 +113,21 @@ export const Logo = styled(LinkR)`
 
 `
 
-export const BusinessName = styled.div`
+export const BusinessName = styled(LinkR)`
     margin-top: 10px;
-    margin-left: 3rem;
-    margin-bottom: 22px;
-    padding: 24px;
-    color: #666666;
-    font-family: 'Bellota', cursive;
-    font-weight: 700;
+    margin-left: 0.5rem;
+    margin-bottom: 16px;
+    color: #000;
+    font-family: 'Bellota Text', cursive;
+    font-weight: 400;
     justify-self: flex-start;
-    font-size: ${({scrollNav}) => (scrollNav ? '1rem' : '2.5rem')};
+    font-size: 2rem;
     display: flex;
     align-items: center;
     align-left: 24px;
     text-decoration: none;
     cursor: pointer;
+    white-space: pre;
 
     &: hover{
     opacity: .8;
@@ -216,7 +218,7 @@ export const NavigationLinks = styled(LinkScroll)`
     padding: 1rem;
     height: 100%;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     ${'' /* margin-top: ${({scrollNav}) => (scrollNav ? '1rem' : '2.6rem')}; */}
     ${'' /* margin-top: 3rem; */}
 

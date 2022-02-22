@@ -3,19 +3,20 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 //import HeroTaqueriaStore from '../../images/TacosHero.png'
 
 export const HeroContainer = styled.div`
-    background: #ECEEEA;
+    background: #fff;
     ${'' /* background-image: ${`url(${HeroTaqueriaStore})`};
     background-repeat: no-repeat;
     background-size: 100%; */}
-    margin-top: 0px;
-    margin-bottom: 5rem;
+    margin-top: 60px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    height: 400px;
+    margin-bottom: 30px;
+    height: 465px;
     width:100%;
-    position: relative:
+    position: relative:;
+    
     z-index: 1;
 
     ${'' /* :before {
@@ -49,6 +50,7 @@ export const HeroBg = styled.div`
     position: absolute;
     height: 100%;
     
+    
     ${'' /* width: 1200px;
     height: 740px; */}
     overflow: hidden;
@@ -64,13 +66,14 @@ border-left-width: 0px; */}
 `
 
 export const VideoBg = styled.video`
-    width: 980px;
-    height: 54%;
+    width: 985px;
+    height: 63%;
     -o-object-fit: none;
     object-fit: cover;
     background-color: transparent;
+    border-radius: 150px;
     
-    margin-top: 170px;
+    margin-top: 135px;
     overflow: hidden;
     ${'' /* background: #232a34; */}
 
@@ -98,6 +101,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     @media screen and (max-width: 1024px){
         margin-top: 70px;
@@ -116,10 +120,10 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bellota Text', cursive;
     font-weight: 400;
     color: #000;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     
     @media screen and (max-width: 1024px){
@@ -132,14 +136,13 @@ export const HeroH1 = styled.h1`
 `
 
 export const HeroP = styled.p`
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     margin-top: 24px;
     color: #000;
     font-size: 20px;
     text-align: center;
     max-width: 600px;
-    font-weight: bold;
 
     @media screen and (max-width: 1024px){
         font-size: 24px;
