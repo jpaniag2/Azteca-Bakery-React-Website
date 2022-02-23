@@ -18,12 +18,12 @@ const Hero = () => {
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='Bakery/mp4' />
       </HeroBg>
-        <HeroContent>
+        {/* <HeroContent>
           <HeroH1>WELCOME</HeroH1>
           <HeroP>
               Scroll
           </HeroP>
-      </HeroContent>
+      </HeroContent> */}
   </HeroContainer>  
     )
 };

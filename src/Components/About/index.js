@@ -32,7 +32,7 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
         <InfoRow imgStart={imgStart}>
-          <Column1 data-aos='slide-up'>
+          <Column1 data-aos='slide-left'>
             <TextWrapper>
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
@@ -51,7 +51,7 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
               </BtnWrap>
             </TextWrapper>
           </Column1>
-          <Column2 data-aos='slide-up'>
+          <Column2 data-aos='slide-right'>
             <ImgWrap>
               <Img src={img} alt={alt} />
             </ImgWrap>
