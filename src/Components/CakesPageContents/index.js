@@ -22,10 +22,9 @@ export const CakesPageContents = () => {
 
   return (
         <Container>
-            <NavBar toggle={toggle} />
+            {/* <NavBar toggle={toggle} /> */}
             {/* <Services /> */}
             <CakeMenu />
-            <Footer />
         
         </Container>
 

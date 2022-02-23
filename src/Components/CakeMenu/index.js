@@ -22,11 +22,8 @@ const CakeMenu = () => {
     AOS.init({ duration: 2000 });
 
     return (<>
-        <ServicesContainer id="menu" data-aos='slide-right'>
+        <ServicesContainer id="menu">
             <ServicesH1>WHAT ARE WE CRAVING?</ServicesH1>
-            <MenuIcon src={MenuItems} />
-
-
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
@@ -44,6 +41,8 @@ const CakeMenu = () => {
                     <ServicesP>Pre-Made & Customization Available</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
+
+            <MenuIcon src={MenuItems} />
 
         </ServicesContainer>
 

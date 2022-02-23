@@ -23,7 +23,7 @@ export const homeObjTwo = {
     lightTextDesc: true,
     topLine: 'Our Pastries', 
     headline: 'SWEET, SAVORY, FRESH, DELICIOUS',
-    description: 'MADE FRESH EVERYDAY. NO PRESERVATICES.',
+    description: 'MADE FRESH EVERYDAY. NO PRESERVATIVES.',
     buttonLabel: 'TAKE A PEEK',
     linkRoute: '/',
     imgStart: true,

@@ -9,7 +9,6 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
 
 
     @media screen and (max-width: 1024px){
@@ -41,7 +40,7 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.div`
-    background: transparent;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -52,29 +51,29 @@ export const ServicesCard = styled.div`
     ${'' /* max-height: 600px;
     min-height: 340px; */}
     padding: 30px;
-    ${'' /* box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out; */}
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
 
-    ${'' /* &:hover {
+    &:hover {
         transform: scale(1.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer; 
-    } */}
+    }
 
 `
 
 export const ServicesIcon = styled.img`
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 10px;
 
-    transition: all 0.2s ease-in-out;
+    ${'' /* transition: all 0.4s ease-in-out;
 
     &:hover {
         transform: scale(2.1);
         transition: all 0.2s ease-in-out;
         cursor: pointer; 
-    }
+    } */}
 
     @media screen and (max-width: 480px){
 
@@ -83,7 +82,7 @@ export const ServicesIcon = styled.img`
 `
 export const MenuIcon = styled.img`
     
-    width: 90%;
+    width: 80%;
     margin-bottom: 10px;
 
     transition: all 0.2s ease-in-out;

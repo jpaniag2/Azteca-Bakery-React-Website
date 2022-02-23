@@ -22,12 +22,10 @@ export const Contents = () => {
   return (
         <Container>
             <Hero />
-            <NavBar toggle={toggle} />
-            <Services />
+            {/* <NavBar toggle={toggle} /> */}
             <About  {...homeObjOne}/>
             <About  {...homeObjTwo}/>
             <Location />
-            <Footer />
         
         </Container>
 
