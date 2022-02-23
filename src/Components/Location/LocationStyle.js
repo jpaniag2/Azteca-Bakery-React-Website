@@ -30,8 +30,8 @@ export const ServicesWrapper = styled.div`
     grid-gap: 8px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1024px){
-        grid-template-columns: fr 1fr;
+    @media screen and (max-width: 1124px){
+        grid-template-columns: 1fr;
     }
 
     @media screen and (max-width: 450px){

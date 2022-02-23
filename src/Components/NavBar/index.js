@@ -58,7 +58,7 @@ const NavBar = ({ toggle }) => {
                     </NavigationItem> */}
 
                     <NavigationItem>
-                        <NavigationLinks to="location" smooth={true} duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
+                        <NavigationLinks onClick={()=> {navigate('/locations')}} smooth={true} to="/" duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
                     </NavigationItem>
 
                     <NavigationItem>

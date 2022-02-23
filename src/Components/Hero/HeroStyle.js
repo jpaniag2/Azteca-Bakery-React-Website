@@ -71,14 +71,14 @@ export const VideoBg = styled.video`
     -o-object-fit: none;
     object-fit: cover;
     background-color: transparent;
-    border-radius: 150px;
     
     margin-top: 135px;
     overflow: hidden;
     ${'' /* background: #232a34; */}
 
     @media screen and (max-width: 1024px){
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
         height: 57.2%;
         object-fit: cover;
     }
