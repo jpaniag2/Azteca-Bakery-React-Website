@@ -18,24 +18,24 @@ const Services = () => {
 AOS.init({ duration: 2000 });
 
   return (
-      <ServicesContainer id="menu" data-aos='slide-up'>
+      <ServicesContainer id="menu">
           <ServicesH1>WHAT ARE WE CRAVING?</ServicesH1>
           <ServicesWrapper>
               <ServicesCard>
                   <ServicesIcon src={Icon1} onClick={()=> {navigate('/cakespage')}} />
-                  <ServicesH2> Tres Leches Cakes</ServicesH2>
+                  <ServicesH2> Tres Leches</ServicesH2>
                   <ServicesP>Pre-Made & Customization Available</ServicesP>
               </ServicesCard>
               <ServicesCard>
                   <ServicesIcon src={Icon2} />
-                  <ServicesH2>Mexican bread & pastries</ServicesH2>
+                  <ServicesH2>Mexican Bread</ServicesH2>
                   <ServicesP> Freshly made everyday</ServicesP>
               </ServicesCard>
-              <ServicesCard>
+              {/* <ServicesCard>
                   <ServicesIcon src={Icon1} />
-                  <ServicesH2> Tres Leches Cakes</ServicesH2>
+                  <ServicesH2> Tres Leches</ServicesH2>
                   <ServicesP>Pre-Made & Customization Available</ServicesP>
-              </ServicesCard>
+              </ServicesCard> */}
           </ServicesWrapper>
       </ServicesContainer>
   );

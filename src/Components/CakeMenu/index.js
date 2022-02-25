@@ -14,6 +14,7 @@ import {
     ServicesH2, ServicesP,
     MenuIcon
 } from './CakeMenuStyle';
+import Hero from '../Hero';
 
 const CakeMenu = () => {
 
@@ -23,7 +24,7 @@ const CakeMenu = () => {
 
     return (<>
         <ServicesContainer id="menu">
-            <ServicesH1>WHAT ARE WE CRAVING?</ServicesH1>
+            {/* <ServicesH1>WHAT ARE WE CRAVING?</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
@@ -40,8 +41,8 @@ const CakeMenu = () => {
                     <ServicesH2> Tres Leches Cakes</ServicesH2>
                     <ServicesP>Pre-Made & Customization Available</ServicesP>
                 </ServicesCard>
-            </ServicesWrapper>
-
+            </ServicesWrapper> */}
+            <Hero />
             <MenuIcon src={MenuItems} />
 
         </ServicesContainer>

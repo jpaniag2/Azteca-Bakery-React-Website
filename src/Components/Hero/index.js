@@ -1,31 +1,40 @@
-import React, {useState} from 'react';
-import Video from '../../videos/BakeryVideo.mp4'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper } from './HeroStyle';
-import {Button} from '../ButtonElements';
+import React from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import Video from '../../videos/HeroExampleVideo.mp4'
+
+
+import { InfoContainer, 
+         InfoWrapper, 
+         TextWrapper, 
+         TopLine, VideoBg, 
+         HeroBg
+
+        } from './HeroStyle';
 
 
 const Hero = () => {
 
-    const [hover, setHover] = useState(false);
-
-    const onHover = () =>{
-        setHover(!hover);
-    }
-
+  AOS.init({ duration: 2000 });
 
   return (
-      <HeroContainer>
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='Bakery/mp4' />
-      </HeroBg>
-        {/* <HeroContent>
-          <HeroH1>WELCOME</HeroH1>
-          <HeroP>
-              Scroll
-          </HeroP>
-      </HeroContent> */}
-  </HeroContainer>  
-    )
+    <>
+    <InfoContainer>
+      <InfoWrapper>
+            <TextWrapper>
+            <HeroBg>
+            <VideoBg autoPlay loop muted src={Video} type='HeroExampleVideo/mp4' />
+            </HeroBg>
+
+              <TopLine data-aos='fade-down-left'>Welcome To Paradise</TopLine>
+            </TextWrapper>
+      </InfoWrapper>
+    </InfoContainer>
+
+    </>
+  )
+
 };
 
 export default Hero;

@@ -3,8 +3,8 @@ import styled from "styled-components"
 export const Container = styled.div`
     background-color: #fff;
     margin-top: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
 
     @media screen and (max-width: 1124px){
         padding-left: 0;

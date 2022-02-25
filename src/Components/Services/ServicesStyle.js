@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
-    ${'' /* background-image: ${`url(${NavPicture})`};
-    background-size: cover; */}
+    ${'' /* background-image: ${`url(${NavPicture})`}; */}
+    background-size: cover;
     background-color: #fff;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    ${'' /* background-color: #D9F1F1; */}
+    
 
 
     @media screen and (max-width: 1024px){
@@ -21,16 +27,19 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
-    max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-gap: 8px;
-    padding: 0 50px;
+    grid-gap: 60px;
+    padding: 50px;
+    border-radius: 20px;
+
+    
 
     @media screen and (max-width: 1024px){
-        grid-template-columns: fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
     }
 
     @media screen and (max-width: 450px){
@@ -50,7 +59,7 @@ export const ServicesCard = styled.div`
     height: 100%;
     ${'' /* max-height: 600px;
     min-height: 340px; */}
-    padding: 30px;
+    ${'' /* padding: 30px; */}
     ${'' /* box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out; */}
 
@@ -63,8 +72,8 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     margin-bottom: 10px;
 
     transition: all 0.2s ease-in-out;
@@ -101,7 +110,7 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
@@ -115,11 +124,11 @@ export const ServicesH2 = styled.h2`
 `
 
 export const ServicesP = styled.p`
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     font-family: 'Bellota Text', cursive;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
 
     @media screen and (max-width: 1024px){
         font-size: .8rem;

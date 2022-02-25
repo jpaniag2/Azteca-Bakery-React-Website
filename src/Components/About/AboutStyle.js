@@ -5,8 +5,12 @@ export const InfoContainer = styled.div`
 
     ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
     ${'' /* background: ${({lightBg}) => (lightBg ? '#F4F4F4' : '#F4F4F4')}; */}
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#fff')};
+    background: ${({lightBg}) => (lightBg ? '#D9F1F1' : '#D9F1F1')};
     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
 
     @media screen and (max-width: 1024px){
         padding: 100px 0;
@@ -16,12 +20,12 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 600px;
+    height: 500px;
     width: 100%;
     max-width: 2000px;
     margin-right: auto;
     margin-left: auto;
-    padding: 10px;
+    padding: 0px;
     justify-content: center;
 
     @media screen and (max-width: 1024px){
@@ -43,26 +47,31 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
-    margin-left: 10%;
-    padding: 0 15px;
+    margin-bottom: 0px;
+    margin-left:0;
+    height: 100%;
+    padding: 0px;
     grid-area: col1;
+    background: transparent;
+    
 `
 export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
+    margin-bottom: 0;
+    padding: 0 0px;
     grid-area: col2;
+    
 `
 
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding: 10px;
+    padding-top: 25%;
+    
 `
 
 export const TopLine = styled.p`
-    color: #666666;
-    font-family: 'Bellota Text', cursive;
+    color: #FDB3CA;
+    font-family: 'Pacifico', cursive;
     font-weight: 300;
     font-size: 2rem;
     line-height: 30px;
@@ -104,10 +113,7 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 100%;
-    height: 450px;
     
-
     @media screen and (max-width: 1024px){
         height: 600px;
     }
@@ -119,10 +125,12 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    height: 100%;
-    margin: 0 0 10px 0;
+    height: 500px;
+    margin: 0 0 0px 0;
     padding-right: 0;
-    object-fit: contain;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     
 
     @media screen and (max-width: 1024px){
