@@ -78,7 +78,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding: 10px;
-    padding-top: 25%;
+    padding-top: 5%;
 
     @media screen and (max-width: 1024px){
         max-width: 540px;
@@ -99,7 +99,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
     line-height: 1.1;
