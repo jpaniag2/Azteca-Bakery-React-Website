@@ -1,3 +1,4 @@
+import Iframe from 'react-iframe'
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
@@ -13,10 +14,12 @@ export const ServicesContainer = styled.div`
 
     @media screen and (max-width: 1024px){
         height: 100%;
+        padding: 10px;
     }
 
     @media screen and (max-width: 480px){
         height: 100%;
+        padding: 15px;
     }
 `
 
@@ -93,8 +96,8 @@ export const MenuIcon = styled.img`
         cursor: pointer; 
     } */}
 
-    @media screen and (max-width: 480px){
-
+    @media screen and (max-width: 1024px){
+        width: 100%;
     }
 
 `
@@ -119,7 +122,7 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
@@ -135,7 +138,7 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
-    font-family: 'Bellota Text', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     text-align: left;
 

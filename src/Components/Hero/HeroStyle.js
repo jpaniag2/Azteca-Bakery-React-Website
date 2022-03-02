@@ -26,7 +26,7 @@ export const InfoWrapper = styled.div`
     z-index: 1;
     height: 500px;
     width: 100%;
-    max-width: 2000px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0px;
@@ -49,8 +49,13 @@ export const TopLine = styled.p`
     text-align: center;
 
     @media screen and (max-width: 1024px){
-        font-size: 7.2rem;
+        font-size: 6rem;
+        line-height: 260px;
         
+    }
+
+    @media screen and (max-width: 454px){
+        display: none;
     }
 `
 
@@ -69,14 +74,13 @@ export const VideoBg = styled.video`
     ${'' /* background: #232a34; */}
 
     @media screen and (max-width: 1024px){
-        height: 69%px;
-        object-fit: contain;
-        height: 60%;
+        object-fit: cover;
+        height: 800px;
     }
 
     @media screen and (max-width:450px){
-        height: 320px;
-        object-fit: contain;
+        height: 600px;
+        object-fit: cover;
     }
     
 `

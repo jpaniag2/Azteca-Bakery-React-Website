@@ -29,7 +29,7 @@ export const Contents = () => {
             <Headings />
             <About  {...homeObjTwo}/>
             {/* <Services /> */}
-            <Location />
+            {/* <Location /> */}
         
         </Container>
 

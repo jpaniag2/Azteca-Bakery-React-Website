@@ -5,6 +5,7 @@ export const Container = styled.div`
     margin-top: 3%;
     padding-left: 15%;
     padding-right: 15%;
+    overflow: hidden;
 
     @media screen and (max-width: 1124px){
         padding-left: 0;

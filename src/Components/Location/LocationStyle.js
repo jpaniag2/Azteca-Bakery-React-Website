@@ -98,6 +98,7 @@ export const ServicesH1 = styled.h1`
     @media screen and (max-width: 480px){
         ${'' /* display:none; */}
         font-size: 2.5rem;
+        text-align: center;
     }
 `
 

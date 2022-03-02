@@ -74,7 +74,6 @@ const NavBar = ({ toggle }) => {
                         <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-100}>GALLERY</NavigationLinks>
                     </NavigationItem>
 
-
                 </NavigationMap>
             </NavBarContainer>
         </Navigation>

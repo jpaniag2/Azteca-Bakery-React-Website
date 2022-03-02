@@ -5,12 +5,13 @@ export const Container = styled.div`
     margin-top: 3%;
     padding-left: 0%;
     padding-right: 0%;
+    overflow: hidden;
 
     @media screen and (max-width: 1124px){
         padding-left: 0;
         padding-right: 0;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     @media screen and (max-width: 450px){
         margin-left: 0%;
