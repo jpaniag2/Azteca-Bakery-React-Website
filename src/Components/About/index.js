@@ -25,7 +25,9 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
   const navigate = useNavigate();
 
 
-  AOS.init({ duration: 2000 });
+  AOS.init({ 
+    disable: 'mobile',
+    duration: 2000 });
 
   return (
     <>
@@ -52,6 +54,7 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
             </TextWrapper>
           </Column1>
           <Column2 >
+          
             <ImgWrap>
               <Img src={img} alt={alt} />
             </ImgWrap>

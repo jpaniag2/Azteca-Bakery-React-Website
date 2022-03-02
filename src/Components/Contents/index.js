@@ -10,6 +10,8 @@ import Hero from '../Hero';
 import Services from '../Services';
 import NavBar from '../NavBar'
 import Headings from '../Headings';
+import Cover from '../Cover';
+import { headingObj1, headingObj2 } from '../Headings/Data';
 
 export const Contents = () => {
 
@@ -24,9 +26,12 @@ export const Contents = () => {
         <Container>
             
             {/* <NavBar toggle={toggle} /> */}
-            <Hero />
+            {/* <Hero /> */}
+            <Cover />
+            <Headings {...headingObj1}/>
+            {/* <Services /> */}
             <About  {...homeObjOne}/>
-            <Headings />
+            <Headings {...headingObj2}/>
             <About  {...homeObjTwo}/>
             {/* <Services /> */}
             {/* <Location /> */}

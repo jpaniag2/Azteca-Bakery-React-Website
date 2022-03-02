@@ -2,9 +2,9 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     background-color: #fff;
-    margin-top: 3%;
-    padding-left: 0%;
-    padding-right: 0%;
+    margin-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
     overflow: hidden;
 
     @media screen and (max-width: 1124px){

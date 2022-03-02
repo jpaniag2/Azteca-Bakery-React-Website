@@ -13,23 +13,20 @@ import { InfoContainer,
         } from './HeadingsStyle';
 
 
-const Headings = () => {
+const Headings = ({topLine, heading, subTitle}) => {
 
-  AOS.init({ duration: 2000 });
+  AOS.init({ 
+    disable: 'mobile', 
+    duration: 2000 });
 
     return (
         <>
             <InfoContainer>
                 <InfoWrapper>
                     <TextWrapper>
-                        <TopLine data-aos='fade-down-left'>Thank You</TopLine>
-                        <Heading> Our Story</Heading>
-                        <Subtitle>
-                            It all began with two great friends and a simple mission: create the world’s
-                            best chocolate chip cookie. 25 years later, the rest is history, baked fresh
-                            daily. Sharing something truly delicious can change your day. And day by day,
-                            it can change the world. World Peace, one cookie at time.
-                        </Subtitle>
+                        <TopLine data-aos='fade-down'>{topLine}</TopLine>
+                        <Heading>{heading} </Heading>
+                        <Subtitle>{subTitle}</Subtitle>
                     </TextWrapper>
                 </InfoWrapper>
             </InfoContainer>

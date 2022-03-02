@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 //import logo from '../../images/HappyTaco.png'
 // import logo from '../../images/LogoDemo.png'
-import logo from '../../images/AztecaLogo14.png'
+// import logo from '../../images/AztecaLogo14.png'
 
 
 export const Navigation = styled.nav`
@@ -81,7 +81,7 @@ export const BrandContainer = styled.div`
 `
 
 export const Logo = styled(LinkR)`
-    background-image: ${`url(${logo})`};
+    ${'' /* background-image: ${`url(${logo})`}; */}
     background-size: contain;
     margin-top: 0px;
     background-repeat: no-repeat;

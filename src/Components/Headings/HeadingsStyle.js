@@ -44,6 +44,10 @@ export const TopLine = styled.p`
     line-height: 160px;
     margin-bottom: 16px;
     text-align: center;
+
+    @media screen and (max-width: 480px){
+        font-size: 4rem;
+    }
 `
 export const Heading = styled.h1`
     margin-bottom: 24px;
@@ -54,7 +58,7 @@ export const Heading = styled.h1`
     color: ${({lightText}) => (lightText ? '#000' : '#000')};
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 2rem;
     }
 `
 
