@@ -10,11 +10,14 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px;
+    border-radius: 40px;
+
 
 
     @media screen and (max-width: 1024px){
         height: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 
     @media screen and (max-width: 480px){
@@ -86,7 +89,7 @@ export const ServicesIcon = styled.img`
 export const MenuIcon = styled.img`
     
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     transition: all 0.2s ease-in-out;
 
@@ -122,10 +125,12 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
+
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: Bold 700;
+    padding: 5%;
 
     @media screen and (max-width: 1024px){
         font-size: 1.1rem;

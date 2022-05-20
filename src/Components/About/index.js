@@ -4,6 +4,9 @@ import {useNavigate} from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
+import {Container} from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 import { InfoContainer, 
          InfoWrapper, 
@@ -26,15 +29,21 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
 
 
   AOS.init({ 
-    disable: 'mobile',
-    duration: 2000 });
+    // disable: 'mobile',
+    duration: 1000 });
 
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
         <InfoRow imgStart={imgStart}>
-          <Column1 data-aos='fade-left'>
+        <Column2>
+          
+          <ImgWrap >
+            <Img src={img} alt={alt} />
+          </ImgWrap>
+        </Column2>
+          <Column1 data-aos='slide-up'>
             <TextWrapper>
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
@@ -53,12 +62,6 @@ const About = ({primary, dark, dark2,lightBg, id, imgStart, topLine, lightText, 
               </BtnWrap>
             </TextWrapper>
           </Column1>
-          <Column2 >
-          
-            <ImgWrap>
-              <Img src={img} alt={alt} />
-            </ImgWrap>
-          </Column2>
         </InfoRow>
       </InfoWrapper>
     </InfoContainer>

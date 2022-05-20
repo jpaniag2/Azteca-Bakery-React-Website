@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { GiTacos } from 'react-icons/gi'
+import { GiStairsCake } from 'react-icons/gi'
 import { animateScroll as scroll } from 'react-scroll/modules';
 import { useNavigate } from 'react-router-dom';
-// import './index.css';
+import logo from '../../images/Logo.png'
+import './index.css';
 
 
 import {
@@ -44,38 +45,35 @@ const NavBar = ({ toggle }) => {
 
     return (<>
 
-        <Navigation scrollNav={scrollNav}>
-        <BusinessName to='/' onClick={toggleHome}>AZTECA BAKERY</BusinessName>
+        <Navigation >
             <NavBarContainer>
-                <NavigationMap>
-                
-                    {/* <NavigationItem>
-                        <NavigationLinks to='/' onClick={toggleHome}  smooth={true} duration={500} spy={true} exact='true' offset={-60}>TOP PAGE</NavigationLinks>
-                    </NavigationItem> */}
-{/* 
-                    <NavigationItem>
-                        <NavigationLinks to="cakes" smooth={true} duration={500} spy={true} exact='true' offset={-60}>ABOUT</NavigationLinks>
-                    </NavigationItem> */}
+                <MobileIcon onClick={toggle}>
+                    <GiStairsCake />
+                </MobileIcon>
+            <img
+                        alt="Azteca Logo"
+                        src={logo}
+                        width="50"
+                        height="50"
+                        className="d-inline-block align-top img"
+                        onClick={()=> {navigate('/')}}
+                        
+                    />
 
-                    <NavigationItem>
-                        <NavigationLinks onClick={()=> {navigate('/locations')}} smooth={true} to="/" duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
-                    </NavigationItem>
+                <NavigationMap>
 
                     <NavigationItem>
                         <NavigationLinks to="/" onClick={()=> {navigate('/cakespage')}} smooth={true} duration={500} spy={true} exact='true' offset={-60}>CAKES</NavigationLinks>
                     </NavigationItem>
 
-
                     <NavigationItem>
-                        <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-140}>SOCIALS</NavigationLinks>
-                    </NavigationItem>
-
-                    <NavigationItem>
-                        <NavigationLinks to="/" smooth={true} duration={500} spy={true} exact='true' offset={-100}>GALLERY</NavigationLinks>
+                        <NavigationLinks onClick={()=> {navigate('/locations')}} smooth={true} to="/" duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
                     </NavigationItem>
 
                 </NavigationMap>
             </NavBarContainer>
+
+            <BusinessName to='/' onClick={toggleHome}>AZTECA BAKERY</BusinessName>
         </Navigation>
 
 

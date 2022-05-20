@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Icon1 from '../../images/CakeDemo1.JPG'
-import Icon2 from '../../images/MakingBread.jpg'
+import Icon1 from '../../images/MakingBread.jpg'
+import Icon2 from '../../images/CakeDemo1.JPG'
 import Icon3 from '../../images/BreadDisplay.jpg'
 
 import {useNavigate} from 'react-router-dom'

@@ -1,0 +1,8 @@
+.img:hover{
+    cursor: pointer;
+    opacity: .9;
+    background: red;
+    text-align: center;
+    border-radius: 180px;
+    padding:0;
+}

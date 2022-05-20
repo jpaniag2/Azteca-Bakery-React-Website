@@ -5,14 +5,17 @@ export const ServicesContainer = styled.div`
     background-size: cover;
     background-color: #fff;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px 0px;
     border-radius: 20px;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 40px;
     ${'' /* background-color: #D9F1F1; */}
     
 
@@ -38,7 +41,7 @@ export const ServicesWrapper = styled.div`
     
 
     @media screen and (max-width: 1024px){
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 0;
     }
 
@@ -88,7 +91,7 @@ export const ServicesIcon = styled.img`
 
     @media screen and (max-width: 1024px){
         height: 300px;
-        width: 1100px;
+        width: 400px;
     }
 
     @media screen and (max-width: 450px){

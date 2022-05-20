@@ -84,7 +84,7 @@ export const FooterLinkItems = styled.div`
 
     export const SocialLogo = styled(Link)`
         color: #4B4B4B;
-        font-family: 'Bellota', cursive;
+        font-family: 'Julius Sans One', cursive;
         font-weight: Regular 400;
         justify-self: start;
         cursor: pointer;

@@ -1,7 +1,12 @@
 import React from 'react';
+import HeroBG from '../../images/CakeCoverIcon1.png'
+import AboutBG from '../../images/AboutBG.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 import { InfoContainer, 
@@ -13,7 +18,7 @@ import { InfoContainer,
         } from './HeadingsStyle';
 
 
-const Headings = ({topLine, heading, subTitle}) => {
+const Headings = ({topLine, heading, subTitle, primary}) => {
 
   AOS.init({ 
     disable: 'mobile', 
@@ -21,15 +26,15 @@ const Headings = ({topLine, heading, subTitle}) => {
 
     return (
         <>
-            <InfoContainer>
-                <InfoWrapper>
+            <Container>
+                 <InfoWrapper>
                     <TextWrapper>
-                        <TopLine data-aos='fade-down'>{topLine}</TopLine>
+                        <TopLine >{topLine}</TopLine>
                         <Heading>{heading} </Heading>
                         <Subtitle>{subTitle}</Subtitle>
                     </TextWrapper>
                 </InfoWrapper>
-            </InfoContainer>
+            </Container>
 
         </>
     )

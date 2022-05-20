@@ -1,0 +1,6 @@
+export const TermsConditions = {
+    firstTerm: 'Personalized Cake Requests',
+    firstTermBody: 'Order regular cakes with at least a day’s notice (round cakes need two days notice). To better serve our clients, for events such as weddings, quinces ,parties bigger than 100 people, we request that the client come and order no later than a month before the event. Please bring your copy of the receipt that is given to you the day you order the cake. For large sized cakes, a base is used and a deposit is required. Once you return the base, the deposit is returned. DEPOSIT IS REQUIRED THE DAY OF THE ORDER. When client comes to pick up the cake the rest of the balance is to be paid in full. ',
+    secondTerm: 'Cake Care',
+    secondTermBody: 'All products are the responsibility of the customer once it leaves our store. We are not responsible for any damages that occur after the cake is picked up. Please keep in mind that cakes are fragile and should be handled with care. -WE DO NOT ISSUE REFUNDS IF THE CAKE HAS BEEN DAMAGED OR EATEN OR IF IT IS A CUSTOM ORDER.'
+}

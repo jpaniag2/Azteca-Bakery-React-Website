@@ -1,30 +1,41 @@
-import React, {useState} from 'react'
-
-import Footer from '../Footer';
-import About from '../About';
+import React from 'react'
 import Location from '../Location'
-import { homeObjOne, homeObjTwo } from '../About/Data';
+import styled from 'styled-components'
+import HeroBG from '../../images/AboutBG.png'
 
-import { Container } from './LocationContentsStyle';
-import Hero from '../Hero';
-import Services from '../Services';
-import NavBar from '../NavBar'
+
+import { Container, LocationContentWrapper, LocationContentCard, Introduction } from './LocationContentsStyle';
+import { locationObj1, locationObj2 } from '../Location/Data';
+
+const Styles = styled.div`
+    padding-top: 5%;
+    background-image: ${`url(${HeroBG})`};
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+`
 
 export const LocationContents = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  }
-
 
   return (
-        <Container>
-            {/* <NavBar toggle={toggle} /> */}
-            <Location />
-        
-        </Container>
+      
+      <Container>
+      <Styles>
+          <LocationContentWrapper>
+              <LocationContentCard>
+                  <Location {...locationObj1} />
+              </LocationContentCard>
+
+              <LocationContentCard>
+                  <Location {...locationObj2} />
+              </LocationContentCard>
+
+          </LocationContentWrapper>
+          </Styles>
+      </Container>
+
 
   )
 }

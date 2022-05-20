@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 import {Link} from 'react-scroll'
 
-export const Button = styled(Link)`
-    background: ${({primary}) => (primary ? '#4B4B4B' : '#4B4B4B')};
+export const Button = styled.a`
+    background: ${({primary}) => (primary ? '#FDB3CA' : '#FDB3CA')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#fff' : '#fff')};
+    color: ${({dark}) => (dark ? '#000' : '#000')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
@@ -15,9 +15,12 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border-radius: 150px;
 
     &: hover{
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#01BF71' : '#01BF71')};
+        color: #fff;
+        background: ${({primary}) => (primary ? '#A691DB' : '#A691DB')};
     }
 `

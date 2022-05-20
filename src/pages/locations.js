@@ -12,7 +12,7 @@ const Locations = () => {
 
   return (
       <>
-      <LocationContents offset="-60" />
+      <LocationContents />
       </>
   )
 }

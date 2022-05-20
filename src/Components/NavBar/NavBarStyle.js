@@ -9,7 +9,7 @@ import { Link as LinkScroll } from 'react-scroll'
 export const Navigation = styled.nav`
     ${'' /* background-color: #222021; */}
     background-color: #fff;
-    height: ${({scrollNav}) => (scrollNav ? '60px' : '160px')};
+    height: ${({scrollNav}) => (scrollNav ? '60px' : '40px')};
     ${'' /* height: 60px; */}
     transition: ${({scrollNav}) => (scrollNav ? '0.6s all ease' : '0.8s all ease')};
     ${'' /* transition: 0.8s all ease; */}
@@ -25,7 +25,7 @@ export const Navigation = styled.nav`
 
 @media screen and (max-width: 1024px){
     transition: 0.8s all ease;
-    height: ${({scrollNav}) => (scrollNav ? '60px' : '140px')};
+    height: ${({scrollNav}) => (scrollNav ? '60px' : '40px')};
 
 }
 
@@ -68,6 +68,12 @@ export const NavBarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0px;
+    margin-right: 0%;
+
+    @media screen and (max-width: 450px){
+    display: none;
+}
+
 `
 export const BrandContainer = styled.div`
     display: flex;
@@ -147,6 +153,7 @@ export const BusinessName = styled(LinkR)`
 
     @media screen and (max-width: 450px){
         font-size: 2rem;
+        display: none;
     }
 
 `
@@ -215,11 +222,11 @@ export const NavigationLinks = styled(LinkScroll)`
     color: #000;
     display: flex;
     align-items: center;
-    text-decorations: none;
-    padding: 1rem;
+    text-decoration: none;
+    padding: 2.5rem 2rem;
     height: 100%;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 1rem;
     ${'' /* margin-top: ${({scrollNav}) => (scrollNav ? '1rem' : '2.6rem')}; */}
     ${'' /* margin-top: 3rem; */}
 

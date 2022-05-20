@@ -10,6 +10,8 @@ export const LocationContainer = styled.div`
     justify-content: center;
     padding-top: 100px;
     align-items: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #000;
 
 
     @media screen and (max-width: 1024px){
@@ -25,7 +27,7 @@ export const ServicesWrapper = styled.div`
     max-width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     grid-gap: 8px;
     padding: 0 50px;
@@ -36,7 +38,7 @@ export const ServicesWrapper = styled.div`
 
     @media screen and (max-width: 450px){
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0 0px;
     }
 `
 
@@ -61,23 +63,31 @@ export const ServicesCard = styled.div`
         cursor: pointer; 
     } */}
 
+    @media screen and (max-width: 480px){
+        height: 300px;
+        padding: 0px;
+    }
+
 `
 
 export const ServicesIcon = styled.img`
-    height: 150px;
-    width: 150px;
+    height: 400px;
+    width: 100%;
     margin-bottom: 10px;
+    object-fit: cover;
+    border: 1px solid;
 
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
         transition: all 0.2s ease-in-out;
         cursor: pointer; 
     }
 
     @media screen and (max-width: 480px){
-
+        height: 300px;
+        width: 300px;
     }
 
 `
@@ -130,4 +140,10 @@ export const ServicesP = styled.p`
     @media screen and (max-width: 480px){
         font-size: .95rem;
     }
+`
+
+export const BtnWrap = styled.a`
+    display: center;
+    justify-content: flex-start;
+    text-decoration: none;
 `
