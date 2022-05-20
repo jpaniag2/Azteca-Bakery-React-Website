@@ -49,7 +49,7 @@ export const BakeryCardStyle = styled.div`
         color: #FDB3CA;
         font-family: 'Bellota Text', cursive;
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: left;
         padding-left: 2rem;
 
