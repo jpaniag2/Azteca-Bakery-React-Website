@@ -18,7 +18,7 @@ export const LocationContents = () => {
 
   return (
       
-      <Container fluid style={{paddingTop: '60px'}}>
+      <Container fluid style={{paddingTop: '60px', paddingBottom: '60px'}}>
         <Location />
       </Container>
 

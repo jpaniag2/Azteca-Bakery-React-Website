@@ -29,8 +29,9 @@ function App() {
     <Cakebar isOpen={isOpen} toggle={toggle}/> */}
 
     {/* <NavigationBar toggle={toggle}/> */}
-    <NavBar2 toggle={toggle} />
-    <TacoBar isOpen={isOpen} toggle={toggle}/>
+    <NavBar />
+    {/* <NavBar2 toggle={toggle} />
+    <TacoBar isOpen={isOpen} toggle={toggle}/> */}
     {/* <NavBar2 /> */}
     <ScrollToTop />
       <Routes >
