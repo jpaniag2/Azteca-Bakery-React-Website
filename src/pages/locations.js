@@ -11,9 +11,9 @@ const Locations = () => {
 
 
   return (
-      <>
-      <LocationContents />
-      </>
+
+      <LocationContents/>
+
   )
 }
 

@@ -1,97 +1,91 @@
-import React, { useState, useEffect } from 'react';
-import { GiStairsCake } from 'react-icons/gi'
-import { animateScroll as scroll } from 'react-scroll/modules';
-import { useNavigate } from 'react-router-dom';
-import logo from '../../images/Logo.png'
+import React from 'react';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
+import { FaInstagram, FaFacebook } from 'react-icons/fa'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import styled from 'styled-components'
+import Logo from '../../images/OfficialLogo.png'
 import './index.css';
 
+const NavStyle = styled.div`
+    .navbar{
+        
+    }
+    .nav-link{
 
-import {
-    Navigation,
-    Navigation2,
-    NavBarContainer,
-    BusinessName,
-    BusinessName2,
-    MobileIcon,
-    NavigationMap,
-    NavigationLinks,
-    NavigationItem,
-    Logo,
-    BrandContainer
-} from './NavBarStyle'
+    }
+    .navbar-brand{
+        font-weight: 400;
+        font-size: 2.5rem;
 
-
-const NavBar = ({ toggle }) => {
-
-    const [scrollNav, setScrollNav] = useState(false);
-
-    const changeNav = () => {
-        if (window.scrollY >= 50) {
-            setScrollNav(true)
-        } else {
-            setScrollNav(false)
+        &:hover{
+            cursor: pointer;
+            color: #DAF0DE !important;
         }
     }
+    img{
 
-    useEffect(() => {
-        window.addEventListener('scroll', changeNav)
-    }, [])
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
     }
 
-    const navigate = useNavigate();
+    a{
+        padding: 5px 15px;
 
-    return (<>
+        &:hover{
+            transition: 0.5s all ease;
+            opacity: 0.8;
+            color: #DAF0DE !important;
+         }
+    }
+`;
 
-        <Navigation >
-            <NavBarContainer>
-                <MobileIcon onClick={toggle}>
-                    <GiStairsCake />
-                </MobileIcon>
-            <img
-                        alt="Azteca Logo"
-                        src={logo}
-                        width="50"
-                        height="50"
-                        className="d-inline-block align-top img"
-                        onClick={()=> {navigate('/')}}
-                        
-                    />
+const NavBar = () => {
 
-                <NavigationMap>
+    return (
 
-                    <NavigationItem>
-                        <NavigationLinks to="/" onClick={()=> {navigate('/cakespage')}} smooth={true} duration={500} spy={true} exact='true' offset={-60}>CAKES</NavigationLinks>
-                    </NavigationItem>
+        <NavStyle>
 
-                    <NavigationItem>
-                        <NavigationLinks onClick={()=> {navigate('/locations')}} smooth={true} to="/" duration={500} spy={true} exact='true' offset={-60}>LOCATIONS</NavigationLinks>
-                    </NavigationItem>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+                <Container>
+                    <Navbar.Brand href='/'>
+                        <img
+                            src={Logo}
+                            width="60"
+                            height="60"
+                            className="d-inline-block align-top"
+                            alt="logo"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                        </Nav>
+                        <Nav navbarScroll>
 
-                </NavigationMap>
-            </NavBarContainer>
+                            <NavDropdown title="Quick Scroll" id="collasible-nav-dropdown" >
 
-            <BusinessName to='/' onClick={toggleHome}>AZTECA BAKERY</BusinessName>
-        </Navigation>
+                                <NavDropdown.Item href='#home'>Home</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#experience">Skills</NavDropdown.Item>
+                                <NavDropdown.Item href='#freelance'>Professional Work</NavDropdown.Item>
+                                <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3"> </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3"> </NavDropdown.Item>
 
+                            </NavDropdown>
 
-        {/* <Navigation2>
-            
-            <NavigationMap>
-            </NavigationMap>
-            <Logo to='/' onClick={toggleHome}></Logo>
-            
+                            <Nav.Link eventKey={2} href="#memes">
 
-
-            <MobileIcon onClick={toggle}>
-                    <GiTacos />
-                </MobileIcon>
-
-        </Navigation2> */}
-
-            </>
+                            </Nav.Link>
+                            <Nav.Item >
+                                <a style={{ color: '#fff' }} href="https://github.com/jpaniag2" target="_blank"><FaInstagram size='2.5rem' /></a>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <a style={{ color: '#fff' }} href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaFacebook size='2.5rem' /></a>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </NavStyle>
     )
 
 }
