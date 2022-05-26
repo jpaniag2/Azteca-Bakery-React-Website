@@ -1,38 +1,56 @@
 import React from 'react'
+import { Container, Col, Row } from 'react-bootstrap';
+import LocationCard from '../LocationCard';
+import { HendersonvilleLocation, AshevilleLocation } from '../LocationCard/Data';
+import { Introduction,TopLine } from './LocationStyle';
 //import Iframe from 'react-iframe'
-import { Button } from '../ButtonElements';
-import { LocationContainer, ServicesCard, ServicesWrapper, ServicesH1, ServicesH2, ServicesP, ServicesIcon, BtnWrap } from './LocationStyle'
 
-const Location = ({img, storeHeadline, locationHeadline, street, city, days, hours, phone, repositoryUrl}) => {
+const locationItems = [HendersonvilleLocation, AshevilleLocation];
+
+const Location = () => {
   return (
-    <LocationContainer>
-      <ServicesWrapper>
-        <ServicesCard>
-          <ServicesH1>{storeHeadline}</ServicesH1>
-          <ServicesIcon src={img} ></ServicesIcon>
+    <Container fluid='xxl'>
+        <br></br>
+        <Introduction>Projects</Introduction>
+        <TopLine>by language</TopLine>
 
-        </ServicesCard>
+      <Row xs={1} md={2} className="g-4">
+        {locationItems.map((location) => (
+          <Col>
+            <LocationCard {...location} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
 
-        <ServicesCard>
-          <ServicesH2>{locationHeadline}</ServicesH2>
-          <ServicesP>{street} </ServicesP>
-          <ServicesP>{city} </ServicesP>
-          <br></br>
-          <ServicesP>{days}{hours}</ServicesP>
-          <br></br>
-          <ServicesP>{phone}</ServicesP>
-          
-          <BtnWrap href={repositoryUrl} target="_blank">
-              <Button>Directions</Button>
-          </BtnWrap>
+    // <LocationContainer>
+    //   <ServicesWrapper>
+    //     <ServicesCard>
+    //       <ServicesH1>{storeHeadline}</ServicesH1>
+    //       <ServicesIcon src={img} ></ServicesIcon>
+
+    //     </ServicesCard>
+
+    //     <ServicesCard>
+    //       <ServicesH2>{locationHeadline}</ServicesH2>
+    //       <ServicesP>{street} </ServicesP>
+    //       <ServicesP>{city} </ServicesP>
+    //       <br></br>
+    //       <ServicesP>{days}{hours}</ServicesP>
+    //       <br></br>
+    //       <ServicesP>{phone}</ServicesP>
+
+    //       <BtnWrap href={repositoryUrl} target="_blank">
+    //           <Button>Directions</Button>
+    //       </BtnWrap>
 
 
-        </ServicesCard>
+    //     </ServicesCard>
 
 
 
-      </ServicesWrapper>
-    </LocationContainer>
+    //   </ServicesWrapper>
+    // </LocationContainer>
   )
 }
 

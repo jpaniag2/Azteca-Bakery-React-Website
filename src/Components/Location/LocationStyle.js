@@ -147,3 +147,27 @@ export const BtnWrap = styled.a`
     justify-content: flex-start;
     text-decoration: none;
 `
+export const Introduction = styled.p`
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bellota Text', cursive;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${({lightText}) => (lightText ? '#111' : '#fff')};
+
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
+`
+export const TopLine = styled.p`
+    color: #ce202a;
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 30px;
+    text-align: center;
+`
