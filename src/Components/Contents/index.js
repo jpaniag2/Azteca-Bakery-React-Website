@@ -13,6 +13,7 @@ import {Container, TabContainer} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Hero2 from '../Hero2';
+import Hero from '../Hero';
 import { HeroObjOne } from '../Hero2/Data';
 
 
@@ -27,7 +28,8 @@ export const Contents = () => {
 
   return (<>
 
-          <Hero2 {...HeroObjOne}/>
+          {/* <Hero2 {...HeroObjOne}/> */}
+          <Hero />
           <Container style={{overflow: "hidden", padding: "50px 0"}}>
 
             <Headings {...headingObj1}/>

@@ -1,14 +1,13 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Container, Carousel } from 'react-bootstrap'
-import CustomCake from '../../images/Personalize.JPG'
-import AztecaReady from '../../images/AztecaReady.JPG'
-import Bread from '../../images/Bread.JPG'
-import PanDulce from '../../images/PanDulce.JPG'
-import HeroBG from '../../images/Picture1.JPG'
+import FirstSlide from '../../images/CarouselPictures/firstSlide.png'
+import SecondSlide from '../../images/CarouselPictures/secondSlide.png'
+import ThirdSlide from '../../images/CarouselPictures/thirdSlide.png'
+import FourthSlide from '../../images/CarouselPictures/fourthSlide.png'
 import styled from 'styled-components'
 
 const Style = styled.div`
-    padding-top: 0%;
+    margin-top: 3%;
     margin-bottom: 5%;
 
     ${'' /* background-image: ${`url(${HeroBG})`};
@@ -23,93 +22,79 @@ const Style = styled.div`
     }
 
     img{
-        height: 500px;
+        max-height: 800px;
         object-fit: cover;
-        border-radius: 5px;
-
+        @media screen and (max-width: 450px){
+            object-fit: cover;
+            height: 500px;
+        }
         }
     .carousel{
-        padding-bottom: 5%;
-        width: 100%;
-        
+ 
 
         @media screen and (max-width: 450px){
+        margin-top: 35%;  
         width: 100%;
+        height: 500px;
         margin-left: 0%;
         margin-right: 0%;
         }
     }
 `
 
-const TopLine = styled.p`
-    color: #FDB3CA;
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    font-size: 10rem;
-    line-height: 160px;
-    margin-bottom: 36px;
-    padding: 0 0;
-    text-align: center;
-
-    @media screen and (max-width: 1200px){
-        font-size: 4rem;
-    }
-
-    @media screen and (max-width: 480px){
-        line-height: 100px;
-        font-size: 2rem;
-    }
-`
 
 const CarouselHero = () => {
 
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
-
     return (
         <Style>
-        <Container fluid>
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={AztecaReady}
-                    alt="First slide"
-                />
-
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={CustomCake}
-                    alt="Second slide"
-                />
-
-
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={PanDulce}
-                    alt="Third slide"
-                />
-
-
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={Bread}
-                    alt="Fourth slide"
-                />
-
-            </Carousel.Item>
-        </Carousel>
-        <TopLine id='gallery'>- Menu -</TopLine>
-        </Container>
+            <Container fluid>
+                <Carousel interval={null}>
+                    <Carousel.Item >
+                        <img
+                            className="d-block w-100"
+                            src={FirstSlide}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={500}>
+                        <img
+                            className="d-block w-100"
+                            src={SecondSlide}
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={ThirdSlide}
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={FourthSlide}
+                            alt="Fourth slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item> */}
+                </Carousel>
+                </Container>
         </Style>
 
 

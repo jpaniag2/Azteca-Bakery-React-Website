@@ -7,11 +7,6 @@ import ScrollToTop from './Components/ScrollToTop';
 import NavBar from './Components/NavBar';
 import Locations from './pages/locations';
 import Footer from './Components/Footer';
-import NavBar2 from './Components/NavBar2';
-import BakeryInfo from './Components/BakeryInfo';
-import Cakebar from './Components/CakeBar';
-import NavigationBar from './Components/NavigationBar'
-import TacoBar from './Components/Tacobar'
 
  
 function App() {
@@ -25,14 +20,9 @@ function App() {
   return (
     
     <Router>
-    {/* <NavBar toggle={toggle}/>
-    <Cakebar isOpen={isOpen} toggle={toggle}/> */}
 
-    {/* <NavigationBar toggle={toggle}/> */}
     <NavBar />
-    {/* <NavBar2 toggle={toggle} />
-    <TacoBar isOpen={isOpen} toggle={toggle}/> */}
-    {/* <NavBar2 /> */}
+
     <ScrollToTop />
       <Routes >
         <Route exact path='/' element={<Home />} />

@@ -1,112 +1,81 @@
 import styled from 'styled-components'
 
-export const InfoContainer = styled.div`
-
-    ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
-    ${'' /* background: ${({lightBg}) => (lightBg ? '#F4F4F4' : '#F4F4F4')}; */}
-    background: #fff;
-    margin-top: -40px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    @media screen and (max-width: 1024px){
-        padding: 0px 0;
-        margin-top: -40px;
-        margin-bottom: -50px;
-        
-    }
-`
-
-export const InfoWrapper = styled.div`
-    display: grid;
-    z-index: 1;
-    height: 500px;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0px;
-    justify-content: center;
-
-    @media screen and (max-width: 1024px){
-        height: 750px;
-    }
-    @media screen and (max-width: 450px){
-        height: 550px;
-    }
-`
-export const TopLine = styled.p`
-    color: #FDB3CA;
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    font-size: 8rem;
-    line-height: 160px;
-    margin-bottom: 16px;
-    text-align: center;
-
-    @media screen and (max-width: 1024px){
-        font-size: 6rem;
-        line-height: 260px;
-        
-    }
-
-    @media screen and (max-width: 454px){
-        display: none;
-    }
-`
-
 export const TextWrapper = styled.div`
-    padding: 10px;
-    
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 5%;
+    position: absolute;
+    text-align: center; 
     
 `
 
-export const VideoBg = styled.video`
-    width: 100%;
-    height: 80%;
-    -o-object-fit: none;
-    object-fit: cover;
-    background-color: transparent;
-    ${'' /* background: #232a34; */}
+export const Introduction = styled.p`
+    margin-bottom: 24px;
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${({lightText}) => (lightText ? '#111' : '#ce202a')};
 
     @media screen and (max-width: 1024px){
-        object-fit: cover;
-        height: 800px;
+        color: transparent;
     }
 
-    @media screen and (max-width:450px){
-        height: 600px;
-        object-fit: cover;
+    @media screen and (max-width: 480px){
+        font-size: 32px;
     }
-    
 `
-export const HeroBg = styled.div`
-    ${'' /* background-image: ${`url(${HeroTaqueriaStore})`};
-    background-repeat: no-repeat;
-    background-size: 1000px;
-    margin-left: 150px; */}
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    ${'' /* width: 1200px;
-    height: 740px; */}
-    overflow: hidden;
 
+export const TopLine = styled.p`
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 30px;
 
-    ${'' /* border: solid;
-border-color: #000;
-border-top-width: 0px;
-border-right-width: 0px;
-border-bottom-width: 10px;
-border-left-width: 0px; */}
+    @media screen and (max-width: 1024px){
+        font-size: 1.5rem;
+    }
 
+    @media screen and (max-width: 480px){
+        color: #ce202a;
+        font-size: .9rem;
+    }
+`
+
+export const Heading = styled.h1`
+    margin-bottom: 24px;
+    font-size: 6rem;
+    font-family: 'Bellota Text', cursive;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${({lightText}) => (lightText ? '#111' : '#000')};
+
+    @media screen and (max-width: 1024px){
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 480px){
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+`
+
+export const Subtitle = styled.p`
+    color: #ce202a;
+    font-size: 2rem;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 30px;
+    @media screen and (max-width: 1024px){
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 480px){
+        font-size: .9rem;
+    }
 `
