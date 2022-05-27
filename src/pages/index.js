@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Contents from '../Components/Contents';
 import NavBar from '../Components/NavBar';
 // import Hero from '../Components/Hero';
@@ -14,15 +15,13 @@ const Home = () => {
     // const toggle = () => {
     //     setIsOpen(!isOpen)
     // }
-  return <>
-    {/* <NavBar toggle={toggle}/> */}
-    <Contents />
-    {/* <Hero />
-    <About  {...homeObjOne}/>
-    <About  {...homeObjTwo}/>
-    <Footer /> */}
+  return (
 
-  </>;
+    <Container fluid style={{backgroundColor: '#f5f5f5'}}>
+    <Contents />
+    </Container>
+
+  )
 };
 
 export default Home;

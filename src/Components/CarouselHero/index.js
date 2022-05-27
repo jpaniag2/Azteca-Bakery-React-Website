@@ -8,7 +8,6 @@ import styled from 'styled-components'
 
 const Style = styled.div`
     margin-top: 3%;
-    margin-bottom: 5%;
 
     ${'' /* background-image: ${`url(${HeroBG})`};
     background-position: center;
@@ -47,7 +46,6 @@ const CarouselHero = () => {
 
     return (
         <Style>
-            <Container fluid>
                 <Carousel interval={null}>
                     <Carousel.Item >
                         <img
@@ -94,7 +92,6 @@ const CarouselHero = () => {
                         </Carousel.Caption>
                     </Carousel.Item> */}
                 </Carousel>
-                </Container>
         </Style>
 
 
