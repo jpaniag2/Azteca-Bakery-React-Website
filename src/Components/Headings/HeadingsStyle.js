@@ -43,7 +43,7 @@ export const InfoWrapper = styled.div`
     }
 `
 export const TopLine = styled.p`
-    color: #FDB3CA;
+    color: ${({isFirstHeading}) => (isFirstHeading ? '#FFFF' : '#F5F5F5')};;
     font-family: 'Bellota', cursive;
     font-weight: 400;
     font-size: 6rem;

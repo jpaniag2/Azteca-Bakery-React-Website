@@ -8,6 +8,7 @@ import './index.css';
 
 const NavStyle = styled.div`
     .navbar{
+        background-color: #fff;
         color: #00211a !important;
     }
     .nav-link{
@@ -53,7 +54,7 @@ const NavBar = () => {
 
         <NavStyle>
 
-            <Navbar collapseOnSelect expand="lg" bg="light"  fixed='top'>
+            <Navbar collapseOnSelect expand="lg" fixed='top'>
                 <Container>
 
                     <Navbar.Brand href='/'>

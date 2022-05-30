@@ -1,5 +1,5 @@
-export const headingObj1 = {
-topLine: `- Our Story -`,
+export const OurStorySection = {
+topLine: `Our Story`,
 heading: `Nuestra Historia`,
 subTitle: `	Azteca Mexican Store and Bakery is a 
             family owned business that is well known for our 
@@ -10,13 +10,13 @@ subTitle: `	Azteca Mexican Store and Bakery is a
             in Western North Carolina. We work hard to provide 
             fresh, traditional, and authentic Mexican pan dulce 
             and Tres Leches cakes daily for our customers.`,
-
-primary: true
+img: require('../../images/HeadingPictures/headingOne.png'),
+isFirstHeading: true
 
 }
 
-export const headingObj2 = {
-    topLine: `- Our Mission -`,
+export const OurMissionSection = {
+    topLine: `Our Mission`,
     heading: `Cultura Mexicana`,
     subTitle: `Throughout the years, our Hispanic community 
                 has grown in WNC. Our people needed a 
@@ -25,7 +25,8 @@ export const headingObj2 = {
                 to continue the traditions of Mexico by using 
                 our authentic recipes to produce the best pan 
                 dulce and Tres Leches cakes for our customers.`,
+    img: require('../../images/HeadingPictures/headingOne.png'),
 
-    primary: false
+    isFirstHeading: false
     
     }

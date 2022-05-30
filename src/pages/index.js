@@ -17,7 +17,7 @@ const Home = () => {
     // }
   return (
 
-    <Container fluid style={{backgroundColor: '#f5f5f5'}}>
+    <Container fluid style={{backgroundColor: '#fff'}}>
     <Contents />
     </Container>
 
