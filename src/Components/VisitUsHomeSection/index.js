@@ -95,6 +95,7 @@ const VisitUsHomeSection = () => {
             </Container>
         </Style> */}
         <Container fluid='xxl'>
+        <Divider></Divider>
         <SectionName>Order & Pick Up Options</SectionName>
             <Description>Come visit us at your nearest Azteca Bakery. We are excited 
         for you to order or pick-up one of our famous Tres-Leches Cakes. If you're 
@@ -107,6 +108,7 @@ const VisitUsHomeSection = () => {
 
             <VisitUsColumns />
 
+            <Divider></Divider>
             <Divider></Divider>
         </>
 

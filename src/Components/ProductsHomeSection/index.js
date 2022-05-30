@@ -10,9 +10,9 @@ import "slick-carousel/slick/slick-theme.css"
 import { Style } from './ProductsHomeStyle';
 
 
-import { BreadCard, PanDulceCard, PastriesCard, SeasonalCard } from '../ProductsHomeCard/Data'
+import {CustomCakeCard, PreMadeCakesCard, BreadCard, PanDulceCard, PastriesCard, SeasonalCard } from '../ProductsHomeCard/Data'
 
-const productItems = [PanDulceCard, PastriesCard, BreadCard, PanDulceCard, SeasonalCard];
+const productItems = [CustomCakeCard, PreMadeCakesCard, PanDulceCard, PastriesCard, BreadCard, SeasonalCard];
 
 const Divider = styled.div`
     padding-bottom: 6rem;
@@ -124,6 +124,7 @@ const ProductsHomeSection = () => {
 
   return (
     <Container fluid='xxl'>
+      <Divider></Divider>
       <SectionName>Our Products</SectionName>
       <Description>For {new Date().getFullYear() - 2001} years we have worked hard to provide fresh, traditional, and authentic Mexican pan dulce and Tres Leches cakes daily for our customers. 
       <br></br> 

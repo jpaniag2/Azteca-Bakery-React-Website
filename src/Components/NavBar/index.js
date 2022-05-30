@@ -10,15 +10,17 @@ const NavStyle = styled.div`
     .navbar{
         background-color: #fff;
         color: #00211a !important;
+        max-height: 60px;
     }
     .nav-link{
-        font-family: 'Bellota Text', cursive;
+        margin-top: 3px;
+        font-family: 'Khula', sans-serif;
         font-weight: 400;
         font-size: 1.5rem;
     }
     .navbar-brand{
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         font-family: 'Julius Sans One', sans-serif;
         font-weight: 600;
 
@@ -26,12 +28,19 @@ const NavStyle = styled.div`
             cursor: pointer;
             color: #585858 !important;
         }
+
+        @media screen and (max-width: 480px){
+        font-size: 1.5rem;
+    }
+
     }
     .nav-item{
         padding: 5px;
     }
     .navbar-collapse{
         text-align: center;
+        background-color: #fff;
+        opacity: 0.9;
     }
     img{
 
@@ -60,9 +69,9 @@ const NavBar = () => {
                     <Navbar.Brand href='/'>
                         <img
                             src={Logo}
-                            width="60"
-                            height="60"
-                            className="d-inline-block align-top"
+                            width="50"
+                            height="50"
+                            className="d-inline-block"
                             alt="logo"
 
                         /> Azteca Bakery</Navbar.Brand>

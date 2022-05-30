@@ -7,7 +7,7 @@ import FourthSlide from '../../images/CarouselPictures/fourthSlide.png'
 import styled from 'styled-components'
 
 const Style = styled.div`
-    margin-top: 3%;
+    margin-top: 2%;
 
     .container{
         height: 100%;
@@ -26,7 +26,7 @@ const Style = styled.div`
  
 
         @media screen and (max-width: 450px){
-        margin-top: 35%;  
+        margin-top: 20%;  
         width: 100%;
         height: 500px;
         margin-left: 0%;
@@ -65,17 +65,13 @@ const CarouselHero = () => {
                         />
 
                     </Carousel.Item>
-                    {/* <Carousel.Item>
+                    <Carousel.Item>
                         <img
                             className="d-block w-100"
                             src={FourthSlide}
                             alt="Fourth slide"
                         />
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item> */}
+                    </Carousel.Item>
                 </Carousel>
         </Style>
 
