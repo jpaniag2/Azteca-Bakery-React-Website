@@ -14,6 +14,8 @@ import { Container, TabContainer } from 'react-bootstrap'
 import ProductsHomeSection from '../ProductsHomeSection';
 import PanDulceHomeSection from '../PanDulceHomeSection';
 import { panDulceHomeInfo } from '../PanDulceHomeSection/Data';
+import VisitUsHomeSection from '../VisitUsHomeSection';
+
 
 
 
@@ -35,20 +37,28 @@ export const Contents = () => {
         <ProductsHomeSection />
       </Container>
 
-      <Container fluid style={{ backgroundColor: '#ffe9ad' }}>
-        <PanDulceHomeSection {...panDulceHomeInfo} />
-      </Container>
-
 
       <Container fluid style={{ backgroundColor: '#ffc9cb' }}>
         <CakeHomeSection {...cakeHomeInfo} />
       </Container>
 
 
-
       <Container fluid style={{ backgroundColor: '#fff' }}>
-        <Headings {...OurStorySection} />
+        <VisitUsHomeSection  />
       </Container>
+
+      <Container fluid style={{ backgroundColor: '#ffe9ad' }}>
+        <PanDulceHomeSection {...panDulceHomeInfo} />
+      </Container>
+
+
+
+      {/* <Container fluid style={{ backgroundColor: '#fff' }}>
+        <Headings {...OurStorySection} />
+      </Container> */}
+
+
+
 
       {/* <Container fluid style={{ backgroundColor: '#fff' }}>
       <Headings {...OurMissionSection} />
