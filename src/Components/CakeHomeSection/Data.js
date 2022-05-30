@@ -1,8 +1,9 @@
 export const cakeHomeInfo = {
 
     topLine: 'Pasteles!', 
-    headline: 'Delightful, Rich, Original',
-    description: 'Get your Azteca Cake or Azteca Extra in-store.',
+    headline: 'Creamy, Rich, Original.',
+    description: 'Customize or grab a pre-made cake!',
+    conditions: '*currently in-store only*',
     buttonLabel: 'See Menu',
     linkRoute: '/menu',
     img: require('../../images/CakeHomeSection/cakeDemo.png'),

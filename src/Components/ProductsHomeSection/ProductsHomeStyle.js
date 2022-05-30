@@ -71,7 +71,7 @@ export const Style = styled.div`
 .slick-prev
 {
     left: 75rem;
-    top: -80px;
+    top: -70px;
 
     @media screen and (max-width: 1500px){
         left: 80vw;
@@ -94,7 +94,7 @@ export const Style = styled.div`
 .slick-next
 {
     right: -25px;
-    top: -80px;
+    top: -70px;
 
     @media screen and (max-width: 1500px){
         right: 1vw;

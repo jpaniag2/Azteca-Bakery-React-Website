@@ -71,7 +71,7 @@ const Style = styled.div`
 
     `
 
-const CakeHomeSection = ({topLine, headline, description, img, buttonLabel, linkRoute}) => {
+const CakeHomeSection = ({topLine, headline, description, img, buttonLabel, linkRoute, conditions}) => {
     return (
         <>
         <Style>
@@ -89,6 +89,7 @@ const CakeHomeSection = ({topLine, headline, description, img, buttonLabel, link
                                 <Card.Title >{topLine}</Card.Title>
                                 <Card.Text style={{ fontWeight: '600' }}>{headline}</Card.Text>
                                 <Card.Text>{description}</Card.Text>
+                                <Card.Text style={{ fontWeight: '400', fontSize: '1rem' }}>{conditions}</Card.Text>
                                 <Button href={linkRoute}>{buttonLabel}</Button>
                             </Card.Body>
 
