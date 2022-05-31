@@ -27,17 +27,16 @@ export const CakesPageContents = () => {
 
   return (<>
     <Style>
-          <CarouselHero />
-          {/* <Container fluid> */}
+          {/* <CarouselHero />
           <Container style={{overflow: "hidden", padding: "50px 0"}}>
           <BakeryInfo />
           
-            {/* <OrderInstructions /> */}
-            {/* <NavBar toggle={toggle} /> */}
-            {/* <Services /> */}
+            <OrderInstructions />
+            <NavBar toggle={toggle} />
+            <Services />
  
             <CakeMenu />
-          </Container>
+          </Container> */}
     </Style>
   </>
 

@@ -1,18 +1,12 @@
 import React, {useState} from 'react'
-import CakesPageContents from '../Components/CakesPageContents';
+import MenuPage from '../Components/MenuPage'
 
 const Menu = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
 
 
   return (
       <>
-      <CakesPageContents offset="-60" />
+      <MenuPage />
       </>
   )
 }

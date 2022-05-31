@@ -1,11 +1,14 @@
 import React from 'react'
-import VisitUsColumns from '../VisitUsColumns'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import styled from 'styled-components'
-
+import TrendyBakesColumns from '../TrendyBakesColumns'
 
 const Divider = styled.div`
     padding-bottom: 6rem;
+
+    @media screen and (max-width: 480px){
+        padding-bottom: 1rem;
+    }
 `
 
 const SectionName = styled.div`
@@ -18,7 +21,9 @@ const SectionName = styled.div`
     padding-top: 5rem;
 
     @media screen and (max-width: 480px){
+        padding-top: 1rem;
         font-size: 2rem;
+        line-height: 40px;
     }
 `
 
@@ -44,7 +49,7 @@ const Description = styled.div`
         margin-left: 0%;
     }
     @media screen and (max-width: 480px){
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
 `
@@ -72,29 +77,27 @@ const SeeLocations = styled.a`
 
 `
 
-const VisitUsHomeSection = () => {
-    return (
+const TrendyBakesSection = () => {
 
+    return (
         <>
         <Container fluid='xxl'>
         <Divider></Divider>
-        <SectionName>Order & Pick Up Options</SectionName>
-            <Description>Come visit us at your nearest Azteca Bakery. We are excited 
-        for you to order or pick-up one of our famous Tres-Leches Cakes. If you're 
-       also in the mood come and pick up some of our daily fresh Pan Dulce for 
-        your morning coffee or share with your friends.
+        <SectionName>A Bit For Every Mood!</SectionName>
+            <Description>Whether enjoying a warm Concha with chocolate on a cloudy day, making fresh tortas, or picking up a limited baked good, there's always something for your mood. 
+                        <br></br>
+                        <br></br>
+                        *Follow us on Instagram for special announcements*
                 <br></br>
                 <br></br>
-                <SeeLocations href='/locations'>See Locations</SeeLocations></Description>
+                <SeeLocations href='https://www.instagram.com/aztecapanycakes/'>Follow Us</SeeLocations></Description>
         </Container>
 
-            <VisitUsColumns />
+            <TrendyBakesColumns />
 
-            <Divider></Divider>
             <Divider></Divider>
         </>
-
     )
 }
 
-export default VisitUsHomeSection
+export default TrendyBakesSection
