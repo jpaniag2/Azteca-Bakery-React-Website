@@ -92,7 +92,7 @@ const VisitUsColumns = () => {
                         <Card.Text>Pre-Made Cakes</Card.Text>
                     </Col>
 
-                    <Col >
+                    <Col sm>
                         <Card.Img style={{ height: '100%' }} src={img} />
                         <Card.Text>Fresh Bread</Card.Text>
 

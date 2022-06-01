@@ -8,15 +8,23 @@ import { homeObjOne, homeObjTwo } from '../About/Data';
 import Headings from '../Headings';
 import { OurStorySection, OurMissionSection } from '../Headings/Data';
 import { Container, TabContainer } from 'react-bootstrap'
-
+import BG from '../../images/CakeHomeSection/lastSection.png'
+import styled from 'styled-components';
 
 
 import ProductsHomeSection from '../ProductsHomeSection';
 import PanDulceHomeSection from '../PanDulceHomeSection';
 import { panDulceHomeInfo } from '../PanDulceHomeSection/Data';
 import VisitUsHomeSection from '../VisitUsHomeSection';
+import LastHomeSection from '../LastHomeSection';
+import LocationsHomeSection from '../LocationsHomeSection';
 
+const Style = styled.div`
+    background-image: ${`url(${BG})`};
+    background-repeat: no-repeat;
+    background-size: 100%;
 
+`
 
 
 export const Contents = () => {
@@ -44,13 +52,22 @@ export const Contents = () => {
 
 
       <Container fluid style={{ backgroundColor: '#fff' }}>
-        <VisitUsHomeSection  />
+        <VisitUsHomeSection />
       </Container>
 
       <Container fluid style={{ backgroundColor: '#ffe9ad' }}>
         <PanDulceHomeSection {...panDulceHomeInfo} />
       </Container>
 
+      <Container fluid>
+        <LocationsHomeSection />
+      </Container>
+
+      <Style>
+        <Container fluid >
+          <LastHomeSection />
+        </Container>
+      </Style>
 
 
       {/* <Container fluid style={{ backgroundColor: '#fff' }}>

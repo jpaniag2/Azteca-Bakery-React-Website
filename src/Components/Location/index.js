@@ -9,7 +9,8 @@ const locationItems = [HendersonvilleLocation, AshevilleLocation];
 
 const Location = () => {
   return (
-    <Container fluid='xxl'>
+    
+    <Container>
         <br></br>
         <Introduction>Projects</Introduction>
         <TopLine>by language</TopLine>

@@ -1,6 +1,8 @@
 import React from 'react'
-import VisitUsColumns from '../VisitUsColumns'
+import LastHomeSectionColumns from '../LastHomeSectionColumns'
+import { HendersonvilleLocation, AshevilleLocation } from '../LastHomeSectionColumns/Data';
 import { Container, Row, Col, Card } from 'react-bootstrap'
+import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import styled from 'styled-components'
 
 
@@ -9,7 +11,7 @@ const Divider = styled.div`
 `
 
 const SectionName = styled.div`
-    color: #00211a;
+    color: #5C636A;
     font-family: 'Old Standard TT', cursive;
     font-weight: 700;
     font-size: 4rem;
@@ -32,7 +34,7 @@ const Description = styled.div`
     text-align: center;
     width: 80%;
     margin-left: 10%;
-    color: #00211a;
+    color: #5C636A;
 
     ${'' /* @media screen and (max-width: 2350px){
         font-size: 1.3vw;
@@ -56,8 +58,14 @@ const SeeLocations = styled.a`
     font-weight: 600;
     line-height: 2;
     position: center;
-    margin: auto;
+    margin: auto 5rem;
     color: #00211a;
+
+    &:Hover{
+            transition: 0.5s all ease;
+            opacity: 0.8;
+            color: #bae8d4 !important;
+    }
 
     ${'' /* @media screen and (max-width: 2350px){
         font-size: 1.3vw;
@@ -72,30 +80,33 @@ const SeeLocations = styled.a`
 
 `
 
-const VisitUsHomeSection = () => {
+const locationItems = [HendersonvilleLocation, AshevilleLocation];
+
+const LocationsHomeSection = () => {
     return (
 
         <>
-        <Container fluid='xxl'>
-        <Divider></Divider>
-        <SectionName>Order & Pick Up Options</SectionName>
-            <Description>Come visit us at your nearest Azteca Bakery. We are excited 
-        for you to order or pick-up one of our famous Tres-Leches Cakes. If you're 
-       also in the mood come and pick up some of our daily fresh Pan Dulce for 
-        your morning coffee or share with your friends.
-                <br></br>
-                <br></br>
-                {/* <SeeLocations href='/locations'>See Locations</SeeLocations> */}
+            <Container fluid='xxl'>
+                <SectionName>Locations </SectionName>
+                <Description>All sweet roads lead to Azteca Bakery.  
+                    <br></br>
+                    <br></br>
+                    <Row xs={1} md={2} className="g-4">
+                    {locationItems.map((location) => (
+                        <Col>
+                            <LastHomeSectionColumns {...location} />
+                        </Col>
+                    ))}
+                </Row>
                 </Description>
-        </Container>
 
-            <VisitUsColumns />
+            </Container>
+           
 
-            <Divider></Divider>
             <Divider></Divider>
         </>
 
     )
 }
 
-export default VisitUsHomeSection
+export default LocationsHomeSection

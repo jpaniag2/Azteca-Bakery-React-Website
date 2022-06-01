@@ -82,7 +82,7 @@ const NavBar = () => {
                         <Nav navbarScroll>
                             <Nav.Link href='/cake'> Cakes</Nav.Link>
                             <Nav.Link href='/bread'> Bread</Nav.Link>
-                            <Nav.Link href='/locations'> Locations</Nav.Link>
+                            {/* <Nav.Link href='/locations'> Locations</Nav.Link> */}
 
                             <Nav.Link eventKey={2} href="#memes">
 
