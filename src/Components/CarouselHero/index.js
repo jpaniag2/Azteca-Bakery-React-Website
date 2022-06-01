@@ -4,6 +4,7 @@ import FirstSlide from '../../images/CarouselPictures/firstSlide.png'
 import SecondSlide from '../../images/CarouselPictures/secondSlide.png'
 import ThirdSlide from '../../images/CarouselPictures/thirdSlide.png'
 import FourthSlide from '../../images/CarouselPictures/fourthSlide.png'
+import FifthSlide from '../../images/CarouselPictures/fifthSlide.png'
 import styled from 'styled-components'
 
 const Style = styled.div`
@@ -70,6 +71,14 @@ const CarouselHero = () => {
                             className="d-block w-100"
                             src={FourthSlide}
                             alt="Fourth slide"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={FifthSlide}
+                            alt="Fifth slide"
                         />
                     </Carousel.Item>
                 </Carousel>

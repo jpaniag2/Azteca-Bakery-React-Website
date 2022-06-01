@@ -25,3 +25,10 @@ export const FourthSlide = {
     img: '../../images/CarouselPictures/fourthSlide.png',
 
 }
+
+export const FifthSlide = {
+    id: 'fifthslide',
+    alt: 'FifthSlide',
+    img: '../../images/CarouselPictures/fifthSlide.png',
+
+}
