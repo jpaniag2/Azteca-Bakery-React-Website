@@ -1,10 +1,13 @@
 import React from 'react'
 import PanDulceSection from '../MenuPageComponents/PanDulceSection'
 import TrendyBakesSection from '../MenuPageComponents/TrendyBakesSection'
+import LastHomeSection from '../LastHomeSection'
 import { Container } from 'react-bootstrap'
 import styled from 'styled-components'
 import SectionDivider from '../MenuPageComponents/SectionDivider'
 import { BreadSectionStart} from '../MenuPageComponents/SectionDivider/Data'
+
+import BG from '../../images/CakeHomeSection/lastSection.png'
 
 const Divider = styled.div`
     padding-bottom: 4rem;
@@ -12,6 +15,12 @@ const Divider = styled.div`
     @media screen and (max-width: 480px){
         padding-bottom: 1.5rem;
     }
+`
+const LastStyle = styled.div`
+    background-image: ${`url(${BG})`};
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 `
 
 const SectionName = styled.div`
@@ -46,6 +55,12 @@ const BreadPage = () => {
       <PanDulceSection />
       </Container>
 
+      <LastStyle>
+            <Container fluid>
+            <LastHomeSection />
+            </Container>
+
+      </LastStyle>
 
     </>
 
