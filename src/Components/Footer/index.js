@@ -21,7 +21,7 @@ const Footer = () => {
 
     return (
 
-        <Container fluid style={{ backgroundColor: '#fff' }}>
+        <Container fluid style={{ backgroundColor: '#bae8d4' }}>
             <FooterWrap>
             <img
                             src={Logo}
