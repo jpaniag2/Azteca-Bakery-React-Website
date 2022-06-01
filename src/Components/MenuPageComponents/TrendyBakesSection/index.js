@@ -84,17 +84,20 @@ const TrendyBakesSection = () => {
         <Container fluid='xxl'>
         <Divider></Divider>
         <SectionName>A Bit For Every Mood!</SectionName>
-            <Description>Whether enjoying a warm Concha with chocolate on a cloudy day, making fresh tortas, or picking up a limited baked good, there's always something for your mood. 
+            <Description>Whether enjoying a cup of hot chocolate with a Concha on a cloudy day, making fresh tortas, or picking up a limited baked good, there's always something for your mood. 
                         <br></br>
                         <br></br>
                         *Follow us on Instagram for special announcements*
                 <br></br>
                 <br></br>
-                <SeeLocations href='https://www.instagram.com/aztecapanycakes/'>Follow Us</SeeLocations></Description>
+                <SeeLocations href='https://www.instagram.com/aztecapanycakes/'>Follow Us</SeeLocations>
+                </Description>
+                <Divider></Divider>
         </Container>
 
             <TrendyBakesColumns />
 
+            <Divider></Divider>
             <Divider></Divider>
         </>
     )

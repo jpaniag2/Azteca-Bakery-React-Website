@@ -60,7 +60,7 @@ export const Style = styled.div`
     line-height: 1;
 
     opacity: 1;
-    color: #000;
+    color: #00211a;
     transition: all 0.7s ease-out;
 
     -webkit-font-smoothing: antialiased;

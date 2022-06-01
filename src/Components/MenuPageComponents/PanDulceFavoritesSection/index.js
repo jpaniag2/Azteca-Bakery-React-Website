@@ -13,7 +13,7 @@ import { TeleraBolilloCard, ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, M
 const favorites = [TeleraBolilloCard, ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, MantecadaCard, DonasCard]
 
 const Divider = styled.div`
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 `
 
 const SectionName = styled.div`
@@ -23,7 +23,7 @@ const SectionName = styled.div`
     font-size: 4rem;
     line-height: 60px;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -123,12 +123,12 @@ const PanDulceFavoritesSection = () => {
 
     return (
         <Container fluid='xxl'>
-            <Divider></Divider>
+
             <SectionName>Bakery Favorites</SectionName>
             <Description> The irresistable favorites over the years. 
                 <br></br>
                 <br></br>
-                <ViewMore href='/menu'>Full List</ViewMore>
+                <ViewMore href='/'>Full List</ViewMore>
             </Description>
             <Style>
                 <Slider {...settings}>

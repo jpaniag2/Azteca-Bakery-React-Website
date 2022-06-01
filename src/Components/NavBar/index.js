@@ -43,7 +43,7 @@ const NavStyle = styled.div`
         opacity: 0.9;
     }
     img{
-
+        
     }
 
     a{
@@ -52,7 +52,7 @@ const NavStyle = styled.div`
         &:hover{
             transition: 0.5s all ease;
             opacity: 0.8;
-            color: #ffc104 !important;
+            color: #bae8d4 !important;
          }
     }
 `;
@@ -80,7 +80,8 @@ const NavBar = () => {
                         <Nav className="me-auto">
                         </Nav>
                         <Nav navbarScroll>
-                            <Nav.Link href='/menu'> Menu</Nav.Link>
+                            <Nav.Link href='/cake'> Cakes</Nav.Link>
+                            <Nav.Link href='/bread'> Bread</Nav.Link>
                             <Nav.Link href='/locations'> Locations</Nav.Link>
 
                             <Nav.Link eventKey={2} href="#memes">

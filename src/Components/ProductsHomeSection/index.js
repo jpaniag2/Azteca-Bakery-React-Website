@@ -129,7 +129,9 @@ const ProductsHomeSection = () => {
       <Description>For {new Date().getFullYear() - 2001} years we have worked hard to provide fresh, traditional, and authentic Mexican pan dulce and Tres Leches cakes daily for our customers. 
       <br></br> 
       <br></br>  
-      <ViewMore href='/menu'>View Menu</ViewMore></Description>
+      <br></br>
+      {/* <ViewMore href='/locations'>View Locations</ViewMore> */}
+      </Description>
       <Style>
         <Slider {...settings}>
           {productItems.map((products) => (

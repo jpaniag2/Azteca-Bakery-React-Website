@@ -43,7 +43,7 @@ const PanDulceFavoritesCard = ({img, title}) => {
 
 
             <Card.Body >
-                <Card.Title style={{ fontFamily: 'Khula', fontSize: '1.3rem', fontWeight: '600' }}>{title}</Card.Title>
+                <Card.Title style={{ fontFamily: 'Khula', fontSize: '1.3rem', fontWeight: '600', color: '#00211a'  }}>{title}</Card.Title>
             </Card.Body>
             {/* <Card.Footer>
             <Button variant="warning" href={linkRoute}>Warning</Button>

@@ -4,7 +4,7 @@ export const panDulceHomeInfo = {
     headline: 'Sweet, Delicious, Authentic Taste.',
     description: 'Made fresh daily!',
     buttonLabel: 'Take a peek',
-    linkRoute: '/menu',
+    linkRoute: '/bread',
     img: require('../../images/PanDulceHomeSection/panDulceDemo.png'),
 
 }
