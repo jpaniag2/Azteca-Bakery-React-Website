@@ -8,9 +8,9 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import { TeleraBolilloCard, ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, MantecadaCard, DonasCard } from '../PanDulceFavoritesCard/FavoritesData'
+import { ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, MantecadaCard, DonasCard } from '../PanDulceFavoritesCard/FavoritesData'
 
-const favorites = [TeleraBolilloCard, ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, MantecadaCard, DonasCard]
+const favorites = [ConchaCard, OrejaCard, CuernitoCard, PolvoronCard, MantecadaCard, DonasCard]
 
 const Divider = styled.div`
     padding-bottom: 3rem;
@@ -128,7 +128,7 @@ const PanDulceFavoritesSection = () => {
             <Description> The irresistable favorites over the years. 
                 <br></br>
                 <br></br>
-                <ViewMore href='/'>Full List</ViewMore>
+                {/* <ViewMore href='/'>Full List</ViewMore> */}
             </Description>
             <Style>
                 <Slider {...settings}>

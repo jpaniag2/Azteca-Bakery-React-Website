@@ -83,9 +83,10 @@ const SpecialEventsSection = () => {
         <>
             <Container fluid='xxl'>
                 <Divider></Divider>
-                <SectionName>We put the 'Special' in Special Event!</SectionName>
+                <SectionName>Let us be part of your special event!</SectionName>
                 <br></br>
-                <Description>We offer customized cakes for special events including Weddings, Quinceañeras, Birthdays, Bautizos, or a victory cake for your little league team.
+                <Description>We offer customized cakes for special events. Whether a special event is in the works or
+                            your little league team won the championship, we are here to make your event special with our delicious cakes!
                     <br></br>
                     <br></br>
                     *Visit our Instagram below to see our previous customized cakes.*

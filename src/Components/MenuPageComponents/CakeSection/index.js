@@ -1,5 +1,6 @@
 import React from 'react'
 import CakeInformationCard from '../CakeInformationCard'
+import LastHomeSection from '../../LastHomeSection'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Style } from './CakeSectionStyle'
 import styled from 'styled-components'
@@ -9,6 +10,8 @@ import cakeFlavorsPic from '../../../images/CakeSizes/cakeFlavors.png'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+
+import BG from '../../../images/CakeHomeSection/lastSection.png'
 
 import {
     EightInch, TenInch, TwelveInch, FourteenInch, SixteenInch, EighteenInch,
@@ -22,6 +25,14 @@ const roundSizes = [EightInch, TenInch, TwelveInch, FourteenInch, SixteenInch, E
 const rectangleSizes = [RecSmall, RecMedium, RecLarge]
 const cakeFlavors = [Vanilla, Chocolate, Mocha]
 const cakeFillings = [Strawberry, Pineapple, Peach, Pecan, Coconut, Flan]
+
+
+const LastStyle = styled.div`
+    background-image: ${`url(${BG})`};
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+`
 
 const Divider = styled.div`
     padding-bottom: 6rem;
@@ -276,6 +287,13 @@ const CakeSection = () => {
                     </Style>
                 </Container>
             </Container> */}
+            <LastStyle>
+            <Container fluid>
+            <LastHomeSection />
+            </Container>
+
+            </LastStyle>
+
 
 
         </>
