@@ -86,14 +86,21 @@ export const FooterLinkItems = styled.div`
     export const SocialLogo = styled(Link)`
         color: #4B4B4B;
         font-family: 'Julius Sans One', cursive;
-        font-weight: Regular 400;
+        font-weight: 600;
         justify-self: start;
         cursor: pointer;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         display: flex;
         align-items: center;
         margin-bottom: 16px;
+        transition: all 0.6 ease-out;
+
+
+        &:hover{
+            transition: all 0.6 ease-out;
+            color: #bae8d4;
+        }
 
     `
 
@@ -112,7 +119,7 @@ export const FooterLinkItems = styled.div`
 `
 
     export const WebsiteRights = styled.small`
-        color: #4B4B4B;
+        color: #66666;
         font-family: 'Bellota Text', cursive;
         font-weight: 500;
         margin-bottom: 16px;
