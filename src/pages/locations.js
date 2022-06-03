@@ -1,14 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import LocationContents from '../Components/LocationContents';
 
 const Locations = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
-
 
   return (
 

@@ -177,7 +177,7 @@ const CakeSection = () => {
 
 
             <Row>
-                <Col md style={{ backgroundColor: '#bae8d4' }}>
+                <Col lg style={{ backgroundColor: '#bae8d4' }}>
                     <Card.Img style={{ objectFit: 'cover', height: '100%' }} src={cakeFlavorsPic} />
                 </Col>
 
@@ -228,28 +228,8 @@ const CakeSection = () => {
                     <Card.Img style={{ objectFit: 'cover', height: '100%' }} src={recCakeSizesPic} />
                 </Col>
 
-                <Col md={{ span: 6, order: 'first' }} style={{ backgroundColor: '#fff' }}>
-                    {/* Rectangle Sizes */}
+                <Col lg={{ span: 6, order: 'first' }} style={{ backgroundColor: '#fff' }}>
 
-                    {/* <Container fluid style={{ backgroundColor: '#FFE9AD'  }}>
-<Container fluid='xxl' >
-    <SectionName>Rectangle Cake Sizes</SectionName>
-    <Description> Custom size must be done in-store.
-        <br></br>
-        <br></br>
-        <ViewMore href='/menu'>Full List</ViewMore>
-    </Description>
-    <Style>
-        <Slider {...settings}>
-            {rectangleSizes.map((products) => (
-                <CakeInformationCard {...products} />
-            ))}
-
-
-        </Slider>
-    </Style>
-</Container>
-</Container> */}
                     <SectionName>Rectangle Cake Sizes</SectionName>
                     <Description> Other custom sizes may be arranged, but not guranteed.</Description>
                     <SectionName>

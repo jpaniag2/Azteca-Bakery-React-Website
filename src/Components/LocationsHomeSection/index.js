@@ -1,8 +1,7 @@
 import React from 'react'
 import LastHomeSectionColumns from '../LastHomeSectionColumns'
 import { HendersonvilleLocation, AshevilleLocation } from '../LastHomeSectionColumns/Data';
-import { Container, Row, Col, Card } from 'react-bootstrap'
-import { FaInstagram, FaFacebook } from 'react-icons/fa'
+import { Container, Row, Col} from 'react-bootstrap'
 import styled from 'styled-components'
 
 
@@ -36,9 +35,7 @@ const Description = styled.div`
     margin-left: 10%;
     color: #5C636A;
 
-    ${'' /* @media screen and (max-width: 2350px){
-        font-size: 1.3vw;
-    } */}
+
     @media screen and (max-width: 480px){
         font-size: 2rem;
         line-height: 2;
@@ -67,9 +64,6 @@ const SeeLocations = styled.a`
             color: #bae8d4 !important;
     }
 
-    ${'' /* @media screen and (max-width: 2350px){
-        font-size: 1.3vw;
-    } */}
     @media screen and (max-width: 480px){
         font-size: 2rem;
         line-height: 2;

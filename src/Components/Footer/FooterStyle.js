@@ -15,6 +15,10 @@ export const FooterWrap = styled.div`
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1024px){
+            padding: 0;
+        }
 `
 
 export const FooterLinksContainer = styled.div`
@@ -100,6 +104,10 @@ export const FooterLinkItems = styled.div`
         &:hover{
             transition: all 0.6 ease-out;
             color: #bae8d4;
+        }
+
+        @media screen and (max-width: 1024px){
+            font-size: 1.5rem;
         }
 
     `

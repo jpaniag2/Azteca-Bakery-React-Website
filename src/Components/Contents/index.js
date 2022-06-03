@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CarouselHero from '../CarouselHero';
 import CakeHomeSection from '../CakeHomeSection';
 import { cakeHomeInfo } from '../CakeHomeSection/Data';
-import About from '../About';
-import { homeObjOne, homeObjTwo } from '../About/Data';
-import Headings from '../Headings';
-import { OurStorySection, OurMissionSection } from '../Headings/Data';
-import { Container, TabContainer } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import BG from '../../images/CakeHomeSection/lastSection.png'
 import styled from 'styled-components';
 
@@ -28,12 +24,6 @@ const Style = styled.div`
 
 
 export const Contents = () => {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
 
 
   return (
@@ -68,23 +58,6 @@ export const Contents = () => {
           <LastHomeSection />
         </Container>
       </Style>
-
-
-      {/* <Container fluid style={{ backgroundColor: '#fff' }}>
-        <Headings {...OurStorySection} />
-      </Container> */}
-
-
-
-
-      {/* <Container fluid style={{ backgroundColor: '#fff' }}>
-      <Headings {...OurMissionSection} />
-      </Container> */}
-
-
-
-      {/* <About  {...homeObjOne} /> */}
-
 
     </>
 

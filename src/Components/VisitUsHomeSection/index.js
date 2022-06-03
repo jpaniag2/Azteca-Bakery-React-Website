@@ -1,6 +1,6 @@
 import React from 'react'
 import VisitUsColumns from '../VisitUsColumns'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import styled from 'styled-components'
 
 
@@ -59,9 +59,7 @@ const SeeLocations = styled.a`
     margin: auto;
     color: #00211a;
 
-    ${'' /* @media screen and (max-width: 2350px){
-        font-size: 1.3vw;
-    } */}
+
     @media screen and (max-width: 480px){
         font-size: 2rem;
         line-height: 2;

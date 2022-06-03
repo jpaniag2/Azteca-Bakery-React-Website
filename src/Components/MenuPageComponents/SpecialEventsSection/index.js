@@ -63,6 +63,12 @@ const SeeLocations = styled.a`
     position: center;
     margin: auto;
     color: #00211a;
+    transition: all 0.5s ease-out;
+
+    &:hover{
+        color: #bae8d4;
+        transition: all 0.5s ease-out;
+    }
 
     ${'' /* @media screen and (max-width: 2350px){
         font-size: 1.3vw;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/index';
@@ -11,12 +11,6 @@ import Cake from './pages/cake';
 
  
 function App() {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  }
 
   return (
     
